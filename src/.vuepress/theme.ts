@@ -8,7 +8,7 @@ export default hopeTheme({
   navbarLayout: {
     start: ["Brand"],
     center: [],
-    end: ["Links", "Language"],
+    end: ["Links", "Outlook", "Language"],
   },
 
   // logo: "/logo.svg",

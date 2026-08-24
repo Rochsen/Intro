@@ -4,6 +4,10 @@
  padding: 120px 0;
 }
 
+[vp-content].vp-portfolio-content {
+  margin-top: 20px;
+}
+
 // 头像容器
 .vp-portfolio-avatar {
   display: flex;
@@ -13,37 +17,32 @@
   height: 100vh;
 }
 
-// 导航栏字体
-.vp-nav {
-  color: white !important;
-}
-.vp-nav-links {
-  column-gap: 0.5rem;
-  color: white !important;
-}
-.vp-nav-item {
-  font-size: 1.5rem;
-  color: white !important;
-  // margin: auto 5px
-}
-
-.vp-navbar {
-  height: 9vh;
-} 
-
 // 站点名称样式
 .vp-site-name {
   font-size: 1.5rem;
 }
+// 导航栏样式
+.vp-navbar {
+  // height: 9vh;
+} 
+// 导航links之间的间距
+.vp-nav-links {
+  column-gap: 0.5rem;
+}
+// 导航item字体大小
+.vp-nav-item {
+  font-size: 1.2rem;
+  // margin: auto 5px
+}
 
+
+// 首页portfolio字体颜色
 .vp-portfolio-welcome {
   color: rgb(196, 196, 247)
 }
-
 .vp-portfolio-name {
   color: white;
 }
-
 .vp-portfolio-title {
   color: rgb(196, 196, 247)
 }
