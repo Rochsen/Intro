@@ -12,31 +12,27 @@ export default hopeTheme({
 
   // logo: "/logo.svg",
 
-  repo: "Rochsen/Profile",
+  // repo: "Rochsen/Profile",
 
   docsDir: "src",
 
-  blog: {
-    description: "woshiyigere"
-  },
+  blog: {},
 
   locales: {
-    "/en/": {
-      navbar: enNavbar,
-      footer: "Default footer",
-      displayFooter: false,
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /** Chinese locale config */
     "/": {
       navbar: zhNavbar,
       footer: "默认页脚",
       displayFooter: false,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
+      },
+    },
+    "/en/": {
+      navbar: enNavbar,
+      footer: "Default footer",
+      displayFooter: false,
+      metaLocales: {
+        editLink: "Edit this page on GitHub",
       },
     },
   },

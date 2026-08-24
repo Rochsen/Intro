@@ -3,27 +3,27 @@ import { navbar } from "vuepress-theme-hope";
 export const enNavbar = navbar([
   {
     text: "PROFILE",
-    link: "/#Profile",
+    link: "/en/#profile",
   },
   {
     text: "SKILLS",
-    link: "/#SkillS",
+    link: "/en/#skills",
   },
   {
     text: "CAREER",
-    link: "/#Career",
+    link: "/en/#career",
   },
   {
     text: "PROJECTS",
-    link: "/#Projects",
+    link: "/en/#projects",
   },
   {
     text: "INTERESTS",
-    link: "/#Interests",
+    link: "/en/#interests",
   },
   {
     text: "WELCOME",
-    link: "/#Welcome",
+    link: "/en/#welcome",
   },
   {
     text: "Blog",
