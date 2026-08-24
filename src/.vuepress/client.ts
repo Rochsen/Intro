@@ -3,7 +3,6 @@ import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentN
 import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunningTime.js";
 import Home from "./layouts/Home.vue";
 
-
 export default defineClientConfig({
   setup() {
     // 透明导航栏
@@ -22,7 +21,7 @@ export default defineClientConfig({
   },
 
   // 布局
-    layouts: {
-      Home,
-    },
+  // layouts: {
+  //   Home,
+  // },
 });
