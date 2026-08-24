@@ -2,7 +2,7 @@
 portfolio: true
 home: true
 name: Luo Haosen
-avatar: /avatar.png
+avatar: /assets/avatar.png
 titles: [
     "Yes Indeed",
     "The sun is a wondrous body, Like a magnificent father",
@@ -12,7 +12,7 @@ titles: [
     "ashen one, hearest thou my voice still?",
     ]
 welcome: "👋 HI THERE, I AM"
-bgImage: /wallpaper-6.jpg
+bgImage: /assets/wallpaper-6.jpg
 avatarStyle: { width: "300px", height: "300px", align-items: "center" }
 content: "portfolio"
 icon: house

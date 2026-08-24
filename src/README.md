@@ -2,7 +2,7 @@
 portfolio: true
 home: true
 name: 我是 罗浩森
-avatar: /avatar.png
+avatar: /assets/avatar.png
 titles:
   [
     "是一名 全栈生信分析工程师",
@@ -11,7 +11,7 @@ titles:
     "Long May The Sun Shine",
   ]
 welcome: "👋 你好, 很高兴认识你"
-bgImage: /wallpaper-6.jpg
+bgImage: /assets/wallpaper-6.jpg
 avatarStyle: { width: "300px", height: "300px", align-items: "center" }
 content: "portfolio"
 icon: house
