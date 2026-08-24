@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://rochsen.github.io/",
   },
 
-  logo: "/logo.svg",
+  // logo: "/logo.svg",
 
   repo: "Rochsen/Profile",
 

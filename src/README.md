@@ -2,16 +2,19 @@
 portfolio: true
 home: true
 name: Luo Haosen
-avatar: /logo.svg
+avatar: /avatar.png
 titles: ["只有风暴才能击倒大树", "Only a storm can fell down a Great Wood"]
 welcome: "👋 HI THERE, I AM"
-bgImage: /light-bgimage.png
+bgImage: /wallpaper-5.jpg
+avatarStyle: { width: "300px", height: "300px", align-items: "center" }
 content: "portfolio"
 icon: house
 title: 主页
 heroFullScreen: true
+layout: Home
 ---
 
+## 档案
 
 测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度
 
