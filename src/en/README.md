@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: house
-title: Blog Home
+title: Profile
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: The name of your blog
 tagline: You can put your slogan here
@@ -37,8 +37,6 @@ projects:
     name: custom item
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
-
-footer: customize your footer text
 ---
 
 This is a blog home page demo.

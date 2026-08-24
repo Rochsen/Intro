@@ -8,15 +8,17 @@ export default defineUserConfig({
   locales: {
     "/en/": {
       lang: "en-US",
-      title: "HomePage",
+      title: "Luo Haosen",
       description: "A FrontEnd programmer",
     },
     "/": {
       lang: "zh-CN",
-      title: "HomePage",
+      title: "Luo Haosen",
       description: "一个前端开发者",
     },
   },
 
   theme,
+
+  port: 5173
 });

@@ -6,27 +6,25 @@ export default hopeTheme({
   hostname: "https://rochsen.github.io/",
 
   author: {
-    name: "Rochsen",
+    name: "Luo Haosen",
     url: "https://rochsen.github.io/",
   },
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "Rochsen/Profile",
 
   docsDir: "src",
 
-  blog: { },
+  blog: {
+    description: "woshiyigere"
+  },
 
   locales: {
     "/en/": {
       navbar: enNavbar,
       footer: "Default footer",
-      displayFooter: true,
-      blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
-      },
+      displayFooter: false,
       metaLocales: {
         editLink: "Edit this page on GitHub",
       },
@@ -36,11 +34,7 @@ export default hopeTheme({
     "/": {
       navbar: zhNavbar,
       footer: "默认页脚",
-      displayFooter: true,
-      blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
-      },
+      displayFooter: false,
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
