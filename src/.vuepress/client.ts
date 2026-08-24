@@ -1,7 +1,7 @@
 import { defineClientConfig } from "vuepress/client";
 import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentNavbar.js";
 import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunningTime.js";
-import Home from "./layouts/Home.vue";
+// import Home from "./layouts/Home.vue";
 
 export default defineClientConfig({
   setup() {

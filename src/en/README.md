@@ -18,7 +18,6 @@ content: "portfolio"
 icon: house
 title: 主页
 heroFullScreen: true
-layout: Home
 ---
 
 ## Profile
