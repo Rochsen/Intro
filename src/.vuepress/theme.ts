@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://rochsen.github.io/",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo.svg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 

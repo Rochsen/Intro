@@ -8,16 +8,15 @@ export default defineUserConfig({
   locales: {
     "/en/": {
       lang: "en-US",
-      title: "Rochsen",
-      description: "A blog demo for vuepress-theme-hope",
+      title: "HomePage",
+      description: "A FrontEnd programmer",
     },
     "/": {
       lang: "zh-CN",
-      title: "罗浩森",
-      description: "五五五五五五",
+      title: "HomePage",
+      description: "一个前端开发者",
     },
   },
 
   theme,
-
 });
