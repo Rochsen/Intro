@@ -6,6 +6,30 @@
 
 [vp-content].vp-portfolio-content {
   margin-top: 20px;
+  max-width: 100% !important;
+  align-items: stretch !important;
+}
+
+// 让section铺满容器
+[vp-content].vp-portfolio-content > .section {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// 去掉标题锚链接的::before装饰
+[vp-content].vp-portfolio-content .header-anchor > span::before {
+  content: none;
+}
+
+// 去掉a.header-anchor上的::before (¶段落符号)
+[vp-content].vp-portfolio-content .header-anchor::before {
+  content: none !important;
+}
+
+// 锚点跳转时预留导航栏高度，避免标题被遮挡
+html {
+  scroll-padding-top: 80px;
 }
 
 // 头像容器
@@ -21,10 +45,11 @@
 .vp-site-name {
   font-size: 1.5rem;
 }
-// 导航栏样式
-.vp-navbar {
-  // height: 9vh;
-} 
+// 导航栏高度
+// .vp-navbar {
+  // height: 10vh;
+// } 
+
 // 导航links之间的间距
 .vp-nav-links {
   column-gap: 0.5rem;
