@@ -16,6 +16,8 @@ content: "portfolio"
 icon: house
 title: 主页
 heroFullScreen: true
+footer: ""
+copyright: "Copyright © 2026 | Luo Haosen. All rights reserved."
 ---
 
 <script setup>
