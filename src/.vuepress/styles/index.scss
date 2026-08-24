@@ -1,7 +1,7 @@
 // place your custom styles here
 // 容器
 .vp-portfolio-container {
- padding: 200px 0;
+ padding: 120px 0;
 }
 
 // 头像容器
@@ -22,6 +22,28 @@
   color: white !important;
 }
 .vp-nav-item {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white !important;
+  // margin: auto 5px
+}
+
+.vp-navbar {
+  height: 9vh;
+} 
+
+// 站点名称样式
+.vp-site-name {
+  font-size: 1.5rem;
+}
+
+.vp-portfolio-welcome {
+  color: rgb(196, 196, 247)
+}
+
+.vp-portfolio-name {
+  color: white;
+}
+
+.vp-portfolio-title {
+  color: rgb(196, 196, 247)
 }

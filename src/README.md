@@ -1,10 +1,17 @@
 ---
 portfolio: true
 home: true
-name: Luo Haosen
+name: 罗浩森
 avatar: /avatar.png
-titles: ["只有风暴才能击倒大树", "Only a storm can fell down a Great Wood"]
-welcome: "👋 HI THERE, I AM"
+titles: [
+    "Yes Indeed",
+    "The sun is a wondrous body, Like a magnificent father",
+    "Only a storm can fell a Great Wood", 
+    "Long May The Sun Shine",
+    "Fear not, the dark, my friend. And let the feast begin",
+    "ashen one, hearest thou my voice still?",
+    ]
+welcome: "👋 你好, 我是"
 bgImage: /wallpaper-6.jpg
 avatarStyle: { width: "300px", height: "300px", align-items: "center" }
 content: "portfolio"
@@ -41,4 +48,6 @@ layout: Home
 
 ## 联系
 
-测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度测试页面宽度
+If you are interested in me, please feel free to email me at rochsen1011@gmail.com.
+
+Discussions and potential collaborations are always welcome!

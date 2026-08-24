@@ -18,12 +18,8 @@ export const zhNavbar = navbar([
     link: "/#兴趣",
   },
   {
-    text: "联系",
-    link: "/#联系",
-  },
-  {
     text: "博客",
-    icon: "book",
+    // icon: "book",
     link: "https://rochsen.github.io/",
   },
 ]);

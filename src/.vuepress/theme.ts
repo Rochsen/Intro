@@ -5,14 +5,17 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 export default hopeTheme({
   hostname: "https://rochsen.github.io/",
 
-  author: {
-    name: "Luo Haosen",
-    url: "https://rochsen.github.io/",
+  navbarLayout: {
+    start: ["Brand"],
+    center: [],
+    end: ["Links", "Language"],
   },
 
   // logo: "/logo.svg",
 
   // repo: "Rochsen/Intro",
+
+  favicon: "/favicon.ico",
 
   docsDir: "src",
 
