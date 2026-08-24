@@ -12,7 +12,7 @@ export default hopeTheme({
 
   // logo: "/logo.svg",
 
-  // repo: "Rochsen/Profile",
+  // repo: "Rochsen/Intro",
 
   docsDir: "src",
 

@@ -21,20 +21,6 @@ export default defineClientConfig({
     );
   },
 
-  //   enhance({ app }) {
-  //     // 按需注册 Antdv-next 组件
-  //     app.use(Button);
-  //     app.use(Card); // CardMeta 随 Card 一起注册
-  //     app.use(Col);
-  //     app.use(Input); // InputSearch 随 Input 一起注册
-  //     app.use(Row);
-  //     app.use(Space);
-  //     app.use(Table);
-  //     app.use(Tag);
-  //     app.use(Timeline); // TimelineItem 随 Timeline 一起注册
-  //     app.use(Tooltip);
-  //   },
-
   // 布局
     layouts: {
       Home,
