@@ -44,6 +44,7 @@ html {
 // 站点名称样式
 .vp-site-name {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 // 导航栏高度
 // .vp-navbar {
@@ -53,11 +54,11 @@ html {
 // 导航links之间的间距
 .vp-nav-links {
   column-gap: 0.5rem;
+  text-transform: uppercase;
 }
 // 导航item字体大小
 .vp-nav-item {
   font-size: 1.2rem;
-  // margin: auto 5px
 }
 
 

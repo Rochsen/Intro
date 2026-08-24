@@ -2,27 +2,27 @@ import { navbar } from "vuepress-theme-hope";
 
 export const enNavbar = navbar([
   {
-    text: "PROFILE",
+    text: "profile",
     link: "/en/#profile",
   },
   {
-    text: "SKILLS",
+    text: "skills",
     link: "/en/#skills",
   },
   {
-    text: "CAREER",
+    text: "career",
     link: "/en/#career",
   },
   {
-    text: "PROJECTS",
+    text: "projects",
     link: "/en/#projects",
   },
   {
-    text: "INTERESTS",
+    text: "interests",
     link: "/en/#interests",
   },
   {
-    text: "Blog",
+    text: "blog",
     link: "https://rochsen.github.io/",
   },
 ]);
