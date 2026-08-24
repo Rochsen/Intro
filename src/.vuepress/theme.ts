@@ -2,6 +2,16 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 
+
+// 社交媒体信息
+export const mediasConfig = {
+  BiliBili: "https://space.bilibili.com/361524948",
+  GitHub: "https://github.com/Rochsen",
+  Steam: "https://steamcommunity.com/profiles/76561199143139420/",
+  Gmail: "mailto:rochsen1011@gmail.com",
+  Zhihu: "https://www.zhihu.com/people/Rochsen",
+};
+
 export default hopeTheme({
   hostname: "https://rochsen.github.io/",
 
@@ -29,6 +39,9 @@ export default hopeTheme({
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
+      blog: {
+        medias: mediasConfig,
+      },
     },
     "/en/": {
       navbar: enNavbar,
@@ -36,6 +49,9 @@ export default hopeTheme({
       displayFooter: false,
       metaLocales: {
         editLink: "Edit this page on GitHub",
+      },
+      blog: {
+        medias: mediasConfig,
       },
     },
   },
