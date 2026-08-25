@@ -3,14 +3,13 @@ portfolio: true
 home: true
 name: Luo Haosen
 avatar: /assets/avatar.png
-titles: [
+titles:
+  [
+    "是一名 全栈生信分析工程师",
     "Yes Indeed",
     "The sun is a wondrous body, Like a magnificent father",
-    "Only a storm can fell a Great Wood", 
     "Long May The Sun Shine",
-    "Fear not, the dark, my friend. And let the feast begin",
-    "ashen one, hearest thou my voice still?",
-    ]
+  ]
 welcome: "👋 HI THERE, I AM"
 bgImage: /assets/wallpaper-6.jpg
 avatarStyle: { width: "300px", height: "300px", align-items: "center" }
