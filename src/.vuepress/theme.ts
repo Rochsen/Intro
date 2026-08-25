@@ -21,10 +21,6 @@ export default hopeTheme({
     end: ["Links", "Outlook", "Language"],
   },
 
-  // logo: "/logo.svg",
-
-  // repo: "Rochsen/Intro",
-
   favicon: "/favicon.ico",
 
   docsDir: "src",
@@ -103,4 +99,8 @@ export default hopeTheme({
       prefix: "//at.alicdn.com/t/c/font_5224531_dnv00kxx81w.css",
     },
   },
+
+  // logo: "/logo.svg",
+
+  // repo: "Rochsen/Intro",
 });

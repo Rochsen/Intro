@@ -1,35 +1,15 @@
 <script setup lang="ts">
-interface Experience {
-  period: string
-  location: string
-  title: string
-  description: string
-  company: string
-}
+import { computed } from 'vue';
+import { Myi18n } from './data.ts';
 
-const experiences: Experience[] = [
-  {
-    period: '2024 - 至今',
-    location: '中国',
-    title: '全栈生信分析工程师',
-    description: '专注于生物信息学分析和全栈开发，为科研项目提供技术支持。',
-    company: '自由职业'
+const props = defineProps({
+  lang: {
+    type: String,
+    default: 'zh-CN',
   },
-  {
-    period: '2022 - 2024',
-    location: '中国',
-    title: '前端开发工程师',
-    description: '负责多个Web应用的前端开发工作，使用Vue.js和React框架。',
-    company: '科技公司'
-  },
-  {
-    period: '2020 - 2022',
-    location: '中国',
-    title: '研究生',
-    description: '攻读生物信息学硕士学位，研究方向为基因组数据分析。',
-    company: '大学'
-  }
-]
+})
+const t = computed(() => Myi18n[props.lang] ?? Myi18n['zh-CN'])
+
 </script>
 
 <template>

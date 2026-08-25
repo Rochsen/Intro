@@ -1,16 +1,21 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { usePageLang } from 'vuepress/client'
 import { Myi18n } from './data.ts'
 
-// 获取当前语言
-const lang = usePageLang()
+// 组件参数
+const props = defineProps({
+  lang: {
+    type: String,
+    default: 'zh-CN'
+  }
+})
+
 // 渲染工具
-const t = computed(() => Myi18n[lang.value] ?? Myi18n['zh-CN'])
+const t = computed(() => Myi18n[props.lang] ?? Myi18n['zh-CN'])
 </script>
 
 <template>
-  <section id="档案" class="section section-contianer">
+  <section :id="t.sectionProfileId" class="section section-contianer">
     <div class="section-header">
       <div class="section-title-row">
         <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
@@ -18,7 +23,7 @@ const t = computed(() => Myi18n[lang.value] ?? Myi18n['zh-CN'])
             d="M504.951 511.98c93.49 0 169.28-74.002 169.28-165.26 0-91.276-75.79-165.248-169.28-165.248-93.486 0-169.287 73.972-169.279 165.248-0.001 91.258 75.793 165.26 169.28 165.26z m77.6 55.098H441.466c-120.767 0-218.678 95.564-218.678 213.45V794.3c0 48.183 97.911 48.229 218.678 48.229H582.55c120.754 0 218.66-1.78 218.66-48.229v-13.77c0-117.887-97.898-213.45-218.66-213.45z"
             p-id="1748" fill="#1296db"></path>
         </svg>
-        <h2 class="section-title-text">{{ t.title }}</h2>
+        <h2 class="section-title-text">{{ t.profileTitle }}</h2>
       </div>
       <div class="section-divider"></div>
     </div>

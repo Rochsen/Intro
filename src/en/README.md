@@ -24,9 +24,23 @@ copyright: "Copyright © 2026 | Luo Haosen. All rights reserved."
 
 <script setup>
 import ProfileSection from '../.vuepress/components/ProfileSection.vue'
+import ExperienceSection from '../.vuepress/components/ExperienceSection.vue'
+import AchievementsSection from '../.vuepress/components/AchievementsSection.vue'
+import InterestsSection from '../.vuepress/components/InterestsSection.vue'
+import ContactSection from '../.vuepress/components/ContactSection.vue'
+
+import { ref } from 'vue'
+import { usePageLang } from 'vuepress/client'
+
+// 获取当前语言
+const lang = usePageLang()
+
 </script>
 
 <ClientOnly>
-  <ProfileSection />
+  <ProfileSection :lang="lang" />
+  <!-- <ExperienceSection :lang="lang" />
+  <AchievementsSection :lang="lang" />
+  <InterestsSection :lang="lang" /> -->
 </ClientOnly>
 
