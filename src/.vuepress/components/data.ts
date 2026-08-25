@@ -66,14 +66,6 @@ export const Myi18n: Record<string, I18nLocale> = {
       },
       {
         period: "2018.09 - 2020.06",
-        title: "新闻媒体部助理/部长",
-        subtitle: "农业与生物学院团委",
-        detail:
-          "协助提供学院各项活动的新闻素材，如稿件和照片等，以及部门内部培训",
-        type: "work",
-      },
-      {
-        period: "2018.09 - 2020.06",
         title: "种子科学与工程",
         subtitle: "仲恺农业工程学院",
         detail: "喜爱高等数学、生物遗传学等课程，并连续两年获取学院二等奖学金",
@@ -148,15 +140,6 @@ export const Myi18n: Record<string, I18nLocale> = {
         detail:
           "Interdisciplinary study of biotechnology courses including genetic engineering, cell engineering, and bioinformatics",
         type: "education",
-      },
-      {
-        period: "Sep. 2018 - Jun. 2020",
-        title: "Assistant / Head of News & Media Department",
-        subtitle:
-          "Youth League Committee, College of Agriculture and Life Sciences",
-        detail:
-          "Assisted in providing news materials for college events, including manuscripts and photographs, as well as internal department training",
-        type: "work",
       },
       {
         period: "Sep. 2018 - Jun. 2020",
