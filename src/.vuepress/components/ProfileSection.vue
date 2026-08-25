@@ -1,23 +1,12 @@
 <script setup lang="ts">
-const profileInfo = {
-  position: '生物信息分析工程师',
-  birthday: '1999-09-03',
-  education: '仲恺农业工程学院',
-  contacts: [
-    {
-      label: '谷歌邮箱',
-      value: 'rochsen1011@gmail.com',
-      link: 'mailto:rochsen1011@gmail.com',
-      iconType: 'google'
-    },
-    {
-      label: 'QQ邮箱',
-      value: '1029143329@qq.com',
-      link: 'mailto:1029143329@qq.com',
-      iconType: 'qq'
-    }
-  ]
-}
+import { computed } from 'vue'
+import { usePageLang } from 'vuepress/client'
+import { Myi18n } from './data.ts'
+
+// 获取当前语言
+const lang = usePageLang()
+// 渲染工具
+const t = computed(() => Myi18n[lang.value] ?? Myi18n['zh-CN'])
 </script>
 
 <template>
@@ -29,7 +18,7 @@ const profileInfo = {
             d="M504.951 511.98c93.49 0 169.28-74.002 169.28-165.26 0-91.276-75.79-165.248-169.28-165.248-93.486 0-169.287 73.972-169.279 165.248-0.001 91.258 75.793 165.26 169.28 165.26z m77.6 55.098H441.466c-120.767 0-218.678 95.564-218.678 213.45V794.3c0 48.183 97.911 48.229 218.678 48.229H582.55c120.754 0 218.66-1.78 218.66-48.229v-13.77c0-117.887-97.898-213.45-218.66-213.45z"
             p-id="1748" fill="#1296db"></path>
         </svg>
-        <h2 class="section-title-text">档案</h2>
+        <h2 class="section-title-text">{{ t.title }}</h2>
       </div>
       <div class="section-divider"></div>
     </div>
@@ -44,9 +33,9 @@ const profileInfo = {
                   d="M512 597.994q108.011 0 209.003-52.011t158.995-140.997q-71.002-66.995-177.003-100.992T512 311.994t-190.992 92.999T144.002 405.985q53.995 88.986 155.995 140.997T512 597.994zM768 767.994q0 66.005-42.997 123.995T608.01 992H415.99q0-62.005-42.003-120.001T256 767.994q0 0 0 0 0.998-157.005 147.993-276.997T512 335.994t108.009 154.997T668.003 767.994q0 0 0 0z"
                   fill="#0366ee" />
               </svg>
-              <span>毕业院校</span>
+              <span>{{ t.education }}</span>
             </div>
-            <div class="info-value">{{ profileInfo.education }}</div>
+            <div class="info-value">{{ t.educationValue }}</div>
           </div>
           <div class="info-section">
             <div class="info-tag">
@@ -55,9 +44,9 @@ const profileInfo = {
                   d="M888.8 255.2H135.2c-44.8 0-80.8 36-80.8 80.8v416c0 44.8 36 80.8 80.8 80.8h753.6c44.8 0 80.8-36 80.8-80.8v-416c0-44.8-36-80.8-80.8-80.8zM512 680.8c-104 0-188.8-84.8-188.8-188.8S408 303.2 512 303.2 700.8 388 700.8 492 616 680.8 512 680.8z"
                   fill="#0366ee" />
               </svg>
-              <span>职业</span>
+              <span>{{ t.position }}</span>
             </div>
-            <div class="info-value">{{ profileInfo.position }}</div>
+            <div class="info-value">{{ t.positionValue }}</div>
           </div>
         </div>
 
@@ -69,9 +58,9 @@ const profileInfo = {
                   d="M213.333333 588.16c15.914667-5.824 31.04-11.456 46.293334-16.746667 1.493333-0.533333 3.968 0.554667 5.589333 1.557334 17.024 10.538667 33.92 21.269333 50.986667 31.786666 1.6 1.002667 4.288 1.578667 5.973333 0.96 34.666667-12.416 69.248-25.045333 103.829333-37.632 0.576-0.213333 1.109333-0.576 2.112-1.130666l-133.12-205.141334c1.578667-0.682667 2.816-1.28 4.074667-1.749333 16.384-5.994667 32.832-11.861333 49.130667-18.048 3.498667-1.322667 5.76-0.704 8.576 1.536 70.272 55.850667 140.650667 111.573333 210.88 167.466667 3.626667 2.88 6.4 3.242667 10.688 1.664 55.893333-20.501333 111.850667-40.853333 167.808-61.141334 26.048-9.450667 51.797333 5.888 55.914666 33.130667 2.816 18.624-8.682667 37.077333-27.605333 44.010667-44.053333 16.085333-88.106667 32.106667-132.181333 48.149333L334.613333 688.853333c-22.144 8.085333-39.04 2.048-53.162666-16.938666-12.906667-17.344-27.2-33.664-40.874667-50.410667L213.333333 588.16z"
                   fill="#1296db" p-id="7636"></path>
               </svg>
-              <span>联系方式</span>
+              <span>{{ t.contacts }}</span>
             </div>
-            <div v-for="contact in profileInfo.contacts" :key="contact.label" class="contact-item">
+            <div v-for="contact in t.contactList" :key="contact.label" class="contact-item">
               <div class="contact-icon-wrapper">
                 <svg v-if="contact.iconType === 'google'" class="contact-icon" viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20">
