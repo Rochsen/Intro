@@ -1,12 +1,11 @@
 <script setup lang="ts">
 const profileInfo = {
-  affiliation: '全栈生信分析工程师',
-  position: '自由职业者',
-  location: '中国',
+  affiliation: '无业',
+  position: '全栈生信分析工程师',
+  location: '广东省揭阳市普宁市',
   contacts: [
-    { type: '邮箱', value: 'rochsen1011@gmail.com', link: 'mailto:rochsen1011@gmail.com' },
-    { type: 'GitHub', value: 'github.com/rochsen', link: 'https://github.com/rochsen' },
-    { type: '博客', value: 'rochsen.github.io', link: 'https://rochsen.github.io/' }
+    { type: '谷歌邮箱', value: 'rochsen1011@gmail.com', link: 'mailto:rochsen1011@gmail.com' },
+    { type: 'QQ邮箱', value: 'github.com/rochsen', link: 'https://github.com/rochsen' },
   ]
 }
 </script>
