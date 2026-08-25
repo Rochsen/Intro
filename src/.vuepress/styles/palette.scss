@@ -2,7 +2,7 @@
 // 将主题颜色设置为红色
 // 注: 为保持一致，你还应该设置其他主题颜色变量
 $vp-c-accent: (
-  light: rgb(141, 195, 245), 
+  light: rgb(141, 195, 245),
   dark: rgb(238, 237, 237),
 );
 
@@ -15,7 +15,7 @@ $vp-c-border: (
 // background
 $vp-c-bg: (
   light: #fff,
-  dark: #1b1b1f,
+  dark: #0a1023,
 ) !default;
 $vp-c-bg-alt: (
   light: #f6f6f7,
@@ -66,12 +66,10 @@ $vp-c-control-disabled: (
   dark: #363636,
 ) !default;
 
-
 // 首页portfolio字体颜色配置
 $vp-portfolio-welcome: rgb(196, 196, 247);
 $vp-portfolio-name: white;
 $vp-portfolio-title: rgb(196, 196, 247);
-
 
 // 布局
 // 加大移动设备上的导航栏高度
@@ -121,6 +119,7 @@ $vp-font-mono: 'ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", 
   --section-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   --section-card-border: 1px solid #f0f0f0;
   --section-card-padding: 2.5rem;
+  --section-card-container-bg: rgba(255, 255, 255, 0.42);
 
   // 标签样式
   --section-tag-radius: 6px;
@@ -134,6 +133,9 @@ $vp-font-mono: 'ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", 
   // 标题下划线
   --section-divider-width: 80px;
   --section-divider-height: 4px;
+
+  // 时间线 虚线样式
+  --section-timeline-line-color: #06000009;
 }
 
 // ============================================================
@@ -147,10 +149,13 @@ $vp-font-mono: 'ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", 
   --section-text-primary: #e8e8e8;
   --section-text-secondary: #a0a0a0;
 
-  --section-bg: #000000;
+  --section-bg: #020618;
   --section-bg-hover: #1a1a1a;
 
   --section-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   --section-card-border: 1px solid #2a2a2a;
-}
+  --section-card-container-bg: #0a1023;
 
+  // 时间线 虚线样式
+  --section-timeline-line-color: #fdfcfc16;
+}

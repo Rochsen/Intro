@@ -8,9 +8,9 @@ export interface I18nLocale {
   positionValue?: string;
   educationValue?: string;
   contactList?: ContactItemType[];
-  sectionCareerId: string; // 生涯sectionID
-  careerTitle: string;
-  careerSummary?: CareerSummaryItemType[];
+  sectionExpId: string; // 经历sectionID
+  expTitle: string;
+  experienceList?: experienceListItemType[];
   sectionProjectId: string; // 项目sectionID
   sectionSkillId: string; // 技术栈sectionID
   sectionEvaluteId: string; // 个人评价sectionID
@@ -24,10 +24,13 @@ export interface ContactItemType {
   iconType: string;
 }
 
-// 生涯总结项类型
-export interface CareerSummaryItemType {
+// 经历总结项类型
+export interface experienceListItemType {
   period: string;
   title: string;
-  description: string;
+  subtitle?: string;
+  detail?: string;
+  type: "work" | "education";
   location?: string;
+  description?: string;
 }

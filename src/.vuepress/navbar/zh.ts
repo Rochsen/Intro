@@ -6,8 +6,12 @@ export const zhNavbar = navbar([
     link: "/#档案",
   },
   {
-    text: "生涯",
-    link: "/#生涯",
+    text: "经历",
+    link: "/#经历",
+  },
+  {
+    text: "技术栈",
+    link: "/#技术栈",
   },
   {
     text: "项目",

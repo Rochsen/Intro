@@ -2,6 +2,7 @@
 // 容器
 .vp-portfolio-container {
   padding: 120px 0;
+  
 }
 
 [vp-content].vp-portfolio-content {
@@ -79,8 +80,8 @@ html {
 /* 最外层section */
 .section-contianer {
   background: var(--section-bg);
-  margin: 4rem 5rem 0;
-  padding: 5rem 1.5rem 0;
+  margin: 0 ;
+  padding: 5rem 5rem 0;
 }
 
 /* section的header */
@@ -117,10 +118,10 @@ html {
 /* section圆角矩形 */
 .section-card {
   border-radius: var(--section-card-radius);
-  background: var(--section-bg);
+  background: var(--section-card-container-bg);
   box-shadow: var(--section-card-shadow);
   padding: var(--section-card-padding);
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   border: var(--section-card-border);
 }
 

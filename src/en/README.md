@@ -39,8 +39,8 @@ const lang = usePageLang()
 
 <ClientOnly>
   <ProfileSection :lang="lang" />
-  <!-- <ExperienceSection :lang="lang" />
-  <AchievementsSection :lang="lang" />
+  <ExperienceSection :lang="lang" />
+  <!-- <AchievementsSection :lang="lang" />
   <InterestsSection :lang="lang" /> -->
 </ClientOnly>
 

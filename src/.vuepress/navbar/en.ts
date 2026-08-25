@@ -6,12 +6,12 @@ export const enNavbar = navbar([
     link: "/en/#profile",
   },
   {
-    text: "skills",
-    link: "/en/#skills",
+    text: "experience",
+    link: "/en/#experience",
   },
   {
-    text: "career",
-    link: "/en/#career",
+    text: "skills",
+    link: "/en/#skills",
   },
   {
     text: "projects",

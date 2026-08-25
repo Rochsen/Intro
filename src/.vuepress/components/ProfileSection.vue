@@ -196,7 +196,7 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n['zh-CN'])
 }
 
 .contact-label {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: var(--section-text-secondary);
   font-weight: 500;
   letter-spacing: 0.3px;
