@@ -93,5 +93,139 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n['zh-CN'])
 </template>
 
 <style lang="scss" scoped>
-// ProfileSection 组件无额外特有样式，所有通用样式均在 index.scss 中定义
+// ProfileSection 组件无通用样式，所有通用样式均在 index.scss 中定义
+// ============================================================
+
+/* 档案信息左右分块 */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+/* 左侧信息区 */
+.grid-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--section-primary-light);
+  color: var(--section-primary);
+  padding: var(--section-tag-padding);
+  border-radius: var(--section-tag-radius);
+  font-size: var(--section-tag-font-size);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.tag-icon {
+  flex-shrink: 0;
+}
+
+.info-value {
+  font-size: 1.6rem;
+  color: var(--section-text-primary);
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+/* 右侧联系方式区 */
+.grid-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contacts-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--section-primary-light);
+  color: var(--section-primary);
+  padding: var(--section-tag-padding);
+  border-radius: var(--section-tag-radius);
+  font-size: var(--section-tag-font-size);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.contact-icon-wrapper {
+  width: var(--section-icon-size);
+  height: var(--section-icon-size);
+  background: var(--section-bg-hover);
+  border-radius: var(--section-icon-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-icon {
+  color: var(--section-text-secondary);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-label {
+  font-size: 0.7rem;
+  color: var(--section-text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.contact-value {
+  font-size: 1rem;
+  color: var(--section-text-primary);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-value:hover {
+  color: var(--section-primary);
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-title-text {
+    font-size: 1.75rem;
+  }
+
+  .info-value {
+    font-size: 1.1rem;
+  }
+}
 </style>
