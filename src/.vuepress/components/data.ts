@@ -25,6 +25,7 @@ export const Myi18n: Record<string, I18nLocale> = {
       },
     ],
     sectionCareerId: "生涯", // 生涯sectionID
+    careerTitle: "生涯",
     careerSummary: [
       {
         period: "2024.01 - 2026.01",
@@ -92,6 +93,7 @@ export const Myi18n: Record<string, I18nLocale> = {
       },
     ],
     sectionCareerId: "career", // 生涯sectionID
+    careerTitle: "Career",
     careerSummary: [
 
     ],

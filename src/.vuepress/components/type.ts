@@ -9,6 +9,7 @@ export interface I18nLocale {
   educationValue?: string;
   contactList?: ContactItemType[];
   sectionCareerId: string; // 生涯sectionID
+  careerTitle: string;
   careerSummary?: CareerSummaryItemType[];
   sectionProjectId: string; // 项目sectionID
   sectionSkillId: string; // 技术栈sectionID
