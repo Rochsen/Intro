@@ -60,11 +60,6 @@ const getTypeColor = (type: string) => {
 </template>
 
 <style scoped>
-.section-contianer {
-  /* background: #f8f9fa; */
-  margin: 0;
-  padding: 5rem 5rem 0;
-}
 
 .timeline-container {
   position: relative;

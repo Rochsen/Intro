@@ -1,14 +1,15 @@
 // place your custom styles here
-// 容器
+// 首页容器
 .vp-portfolio-container {
-  padding: 120px 0;
-  
+  padding: 120px 0 70px; // 默认padding
+  // padding: 60px 0;
 }
 
 [vp-content].vp-portfolio-content {
   max-width: 100% !important;
   align-items: stretch !important;
   background: var(--section-bg);
+  padding: 0;
 }
 
 // 让section铺满容器
@@ -26,11 +27,6 @@
 // 去掉a.header-anchor上的::before (¶段落符号)
 [vp-content].vp-portfolio-content .header-anchor::before {
   content: none !important;
-}
-
-// 锚点跳转时预留导航栏高度，避免标题被遮挡
-html {
-  scroll-padding-top: 80px;
 }
 
 // 头像容器
@@ -81,8 +77,8 @@ html {
 /* 最外层section */
 .section-contianer {
   background: var(--section-bg);
-  margin: 0 ;
-  padding: 5rem 5rem 0;
+  margin: 0 10rem;
+  padding: 50px 0 25px;
 }
 
 /* section的header */
@@ -122,7 +118,7 @@ html {
   background: var(--section-card-container-bg);
   box-shadow: var(--section-card-shadow);
   padding: var(--section-card-padding);
-  margin: 2rem 0 0;
+  margin: 0;
   border: var(--section-card-border);
 }
 
