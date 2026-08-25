@@ -34,5 +34,4 @@ import ContactSection from './.vuepress/components/ContactSection.vue'
   <ExperienceSection />
   <AchievementsSection />
   <InterestsSection />
-  <ContactSection />
 </ClientOnly>

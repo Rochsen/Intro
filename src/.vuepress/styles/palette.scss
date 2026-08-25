@@ -1,7 +1,10 @@
 // you can change colors here
 // 将主题颜色设置为红色
 // 注: 为保持一致，你还应该设置其他主题颜色变量
-$vp-c-accent: red;
+$vp-c-accent: (
+  light: rgb(141, 195, 245), 
+  dark: rgb(238, 237, 237),
+);
 
 // 将边框颜色加深
 $vp-c-border: (
@@ -22,6 +25,10 @@ $vp-c-bg-elv: (
   light: #fff,
   dark: #202127,
 ) !default;
+$vp-c-bg-soft: (
+  light: rgba(106, 106, 228, 0.1),
+  dark: #1e1e1f,
+);
 
 // text
 $vp-c-text: (
@@ -60,6 +67,12 @@ $vp-c-control-disabled: (
 ) !default;
 
 
+// 首页portfolio字体颜色配置
+$vp-portfolio-welcome: rgb(196, 196, 247);
+$vp-portfolio-name: white;
+$vp-portfolio-title: rgb(196, 196, 247);
+
+
 // 布局
 // 加大移动设备上的导航栏高度
 // $navbar-mobile-height: 3.5rem;
@@ -85,4 +98,59 @@ $home-page-width: 1160px !default;
 $vp-font: '"Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' !default;
 $vp-font-heading: $vp-font !default;
 $vp-font-mono: 'ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace' !default;
+
+// ============================================================
+// Section 组件通用样式变量 - 浅色模式
+// ============================================================
+
+:root {
+  // 主题色
+  --section-primary: #0366ee;
+  --section-primary-light: rgba(3, 102, 238, 0.08);
+
+  // 文字颜色
+  --section-text-primary: #1a1a2e;
+  --section-text-secondary: #8b949e;
+
+  // 背景色
+  --section-bg: #fff;
+  --section-bg-hover: #f5f5f5;
+
+  // 卡片样式
+  --section-card-radius: 16px;
+  --section-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --section-card-border: 1px solid #f0f0f0;
+  --section-card-padding: 2.5rem;
+
+  // 标签样式
+  --section-tag-radius: 6px;
+  --section-tag-padding: 0.35rem 0.75rem;
+  --section-tag-font-size: 0.75rem;
+
+  // 图标容器
+  --section-icon-size: 44px;
+  --section-icon-radius: 10px;
+
+  // 标题下划线
+  --section-divider-width: 80px;
+  --section-divider-height: 4px;
+}
+
+// ============================================================
+// Section 组件通用样式变量 - 深色模式
+// ============================================================
+
+[data-theme="dark"] {
+  --section-primary: #4da3ff;
+  --section-primary-light: rgba(77, 163, 255, 0.15);
+
+  --section-text-primary: #e8e8e8;
+  --section-text-secondary: #a0a0a0;
+
+  --section-bg: #000000;
+  --section-bg-hover: #1a1a1a;
+
+  --section-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --section-card-border: 1px solid #2a2a2a;
+}
 
