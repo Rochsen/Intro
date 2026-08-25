@@ -61,7 +61,8 @@ export const Myi18n: Record<string, I18nLocale> = {
         period: "2020.09 - 2021.06",
         title: "仲华基因科技产业班",
         subtitle: "仲恺农业工程学院",
-        detail: "交叉学习生物技术课程，如基因工程、细胞工程、生物信息学等",
+        detail:
+          "与深圳华大基因联合培养，学习基因组学课程，扩充基因工程、细胞工程、生物信息学等知识",
         type: "education",
       },
       {
@@ -138,7 +139,7 @@ export const Myi18n: Record<string, I18nLocale> = {
         title: "Zhonghua Gene Technology Industry Program",
         subtitle: "Zhongkai University of Agriculture and Engineering",
         detail:
-          "Interdisciplinary study of biotechnology courses including genetic engineering, cell engineering, and bioinformatics",
+          "Joint training with BGI Shenzhen to learn genomics courses and expand knowledge on genetic engineering, cell engineering, bioinformatics, etc.",
         type: "education",
       },
       {
