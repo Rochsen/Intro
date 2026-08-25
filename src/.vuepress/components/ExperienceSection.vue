@@ -129,7 +129,6 @@ const getTypeColor = (type: string) => {
 
 .timeline-text {
   flex: 1;
-  color: var()
 }
 
 .timeline-title {
