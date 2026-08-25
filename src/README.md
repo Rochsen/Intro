@@ -2,7 +2,7 @@
 portfolio: true
 home: true
 name: 我是 罗浩森
-avatar: /assets/avatar.png
+avatar: /favicon.ico
 titles:
   [
     "是一名 全栈生信分析工程师",
