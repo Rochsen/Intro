@@ -22,14 +22,15 @@ copyright: "Copyright © 2026 | Luo Haosen. All rights reserved."
 ---
 
 <script setup>
+import { ref } from 'vue'
+import { usePageLang } from 'vuepress/client'
+// 自建 section 组件
 import ProfileSection from '../.vuepress/components/ProfileSection.vue'
 import ExperienceSection from '../.vuepress/components/ExperienceSection.vue'
 import TechStackSection from '../.vuepress/components/TechStackSection.vue'
 import ProjectSection from '../.vuepress/components/ProjectSection.vue'
 import InterestsSection from '../.vuepress/components/InterestsSection.vue'
-
-import { ref } from 'vue'
-import { usePageLang } from 'vuepress/client'
+import WelcomeSection from '../.vuepress/components/WelcomeSection.vue'
 
 // 获取当前语言
 const lang = usePageLang()
@@ -43,5 +44,6 @@ const lang = usePageLang()
     <TechStackSection :lang="lang" />
     <ProjectSection :lang="lang" />
     <InterestsSection :lang="lang" />
+    <WelcomeSection :lang="lang" />
   </div>
 </ClientOnly>

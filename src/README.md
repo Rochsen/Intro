@@ -27,6 +27,7 @@ import ExperienceSection from './.vuepress/components/ExperienceSection.vue'
 import TechStackSection from './.vuepress/components/TechStackSection.vue'
 import ProjectSection from './.vuepress/components/ProjectSection.vue'
 import InterestsSection from './.vuepress/components/InterestsSection.vue'
+import WelcomeSection from './.vuepress/components/WelcomeSection.vue'
 
 import { ref } from 'vue'
 import { usePageLang } from 'vuepress/client'
@@ -43,5 +44,6 @@ const lang = usePageLang()
     <TechStackSection :lang="lang" />
     <ProjectSection :lang="lang" />
     <InterestsSection :lang="lang" />
+    <WelcomeSection :lang="lang" />
   </div>
 </ClientOnly>

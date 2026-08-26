@@ -11,10 +11,18 @@ export interface I18nLocale {
   sectionExpId: string; // 经历sectionID
   expTitle: string;
   experienceList?: experienceListItemType[];
-  sectionProjectId: string; // 项目sectionID
-  techsList?: techsListItemType[]; // 技术栈列表
   sectionTechStackId: string; // 技术栈sectionID
-  sectionEvaluteId: string; // 个人评价sectionID
+  techTitle: string;
+  techsList?: techsListItemType[];
+  sectionProjectId: string; // 项目sectionID
+  projectTitle: string;
+  projectList?: projectListItemType[];
+  sectionInterestsId: string; // 兴趣sectionID
+  interestsTitle: string;
+  interestList?: InterestType[];
+  sectionWelcomeId: string; // 结尾欢迎
+  welcomeTitle: string;
+  welcomeDescription?: string;
 }
 
 // 联系方式项类型
@@ -40,11 +48,25 @@ export interface experienceListItemType {
 export interface techsListItemType {
   title: string;
   icon: string;
-  gradient: string;
-  glowColor: string;
+  gradient: string; // 渐变色
+  glowColor: string; //
   items: techsListItemItemType[];
 }
 export interface techsListItemItemType {
   name: string;
   desc?: string;
+}
+
+// 项目项类型
+export interface projectListItemType {
+  title: string;
+  description: string;
+  link: string;
+  tech?: string[];
+}
+
+// 兴趣/感兴趣的方向类型
+export interface InterestType {
+  name: string;
+  desc: string;
 }

@@ -74,6 +74,7 @@ export const Myi18n: Record<string, I18nLocale> = {
       },
     ],
     sectionTechStackId: "技术栈", // 技术栈sectionID
+    techTitle: "技术栈",
     techsList: [
       {
         title: "编程技术栈",
@@ -116,7 +117,14 @@ export const Myi18n: Record<string, I18nLocale> = {
       },
     ],
     sectionProjectId: "项目", // 项目sectionID
-    sectionEvaluteId: "个人评价", // 个人评价sectionID
+    projectTitle: "项目",
+    projectList: [],
+    sectionInterestsId: "兴趣", // 个人评价sectionID
+    interestsTitle: "兴趣",
+    interestList: [],
+    sectionWelcomeId: "联系", // 结尾欢迎
+    welcomeTitle: "欢迎您与我联系",
+    welcomeDescription: "",
   },
   "en-US": {
     sectionProfileId: "profile", // 档案sectionID
@@ -193,6 +201,7 @@ export const Myi18n: Record<string, I18nLocale> = {
       },
     ],
     sectionTechStackId: "techs", // 技术栈sectionID
+    techTitle: "TechStack",
     techsList: [
       {
         title: "Coding Tech",
@@ -234,7 +243,14 @@ export const Myi18n: Record<string, I18nLocale> = {
         ],
       },
     ],
-    sectionProjectId: "project", // 项目sectionID
-    sectionEvaluteId: "evalute", // 个人评价sectionID
+    sectionProjectId: "projects", // 项目sectionID
+    projectTitle: "Project",
+    projectList: [],
+    sectionInterestsId: "interests", // 兴趣sectionID
+    interestsTitle: "Interests",
+    interestList: [],
+    sectionWelcomeId: "welcome", // 结尾欢迎
+    welcomeTitle: "Welcome",
+    welcomeDescription: "",
   },
 };

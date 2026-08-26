@@ -81,13 +81,14 @@
 }
 
 /* 单个section */
-.section-contianer {
+.section-container {
   background: var(--section-bg);
   padding: 32px 0 48px;
 }
 
 /* section的header */
-.section-header {}
+.section-header {
+}
 
 /* section标题行 */
 .section-title-row {
@@ -112,10 +113,14 @@
 .section-divider {
   height: 0.3rem; /* 左侧的最大高度 */
   width: 20%; /* 建议改为100%以符合图片效果；如果想保留原样，可改回 10% */
-  background-image: linear-gradient(45deg, rgb(59, 136, 241), rgba(247, 246, 249, 0.879));
+  background-image: linear-gradient(
+    45deg,
+    rgb(59, 136, 241),
+    rgba(247, 246, 249, 0.879)
+  );
   opacity: 0.8;
   margin: 0.5rem 0; /* 微调了margin，去掉左右，防止撑破布局 */
-  
+
   /* 核心修改：通过裁剪实现左粗右细 */
   /* (0 0 是左上角，100% 40% 是右上角向下压，100% 60% 是右下角，0 100% 是左下角) */
   /* 这里右边只有20%的高度，左边是100%高度，形成了由粗变细的细线 */

@@ -22,6 +22,10 @@ export const enNavbar = navbar([
     link: "/en/#interests",
   },
   {
+    text: "welcome",
+    link: "/en/#welcome",
+  },
+  {
     text: "blog",
     link: "https://rochsen.github.io/",
   },
