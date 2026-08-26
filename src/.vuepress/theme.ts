@@ -31,17 +31,11 @@ export default hopeTheme({
       navbar: zhNavbar,
       footer: "默认页脚",
       displayFooter: false,
-      blog: {
-        medias: mediasConfig,
-      },
     },
     "/en/": {
       navbar: enNavbar,
       footer: "Default footer",
       displayFooter: false,
-      blog: {
-        medias: mediasConfig,
-      },
     },
   },
 

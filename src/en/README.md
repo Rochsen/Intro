@@ -11,7 +11,7 @@ titles:
     "Long May The Sun Shine",
   ]
 welcome: "👋 HI THERE, I AM"
-bgImage: /assets/wallpaper-6.jpg
+bgImage: /assets/wallpaper-3.jpg
 avatarStyle: { width: "300px", height: "300px", align-items: "center" }
 content: "portfolio"
 icon: house
