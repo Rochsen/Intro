@@ -11,51 +11,10 @@ const props = defineProps({
 
 const t = computed(() => Myi18n[props.lang] ?? Myi18n['zh-CN'])
 
-const techStacks = [
-  {
-    title: '编程技术栈',
-    icon: '💻',
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    glowColor: 'rgba(102, 126, 234, 0.3)',
-    items: [
-      { name: 'Python', desc: '脚本语言' },
-      { name: 'Gooey', desc: 'GUI构建' },
-      { name: 'FastApi', desc: 'Web框架' },
-      { name: 'Vue3', desc: '渐进式框架' },
-      { name: 'Typescript', desc: '类型安全' },
-    ]
-  },
-  {
-    title: '生信技术栈',
-    icon: '🧬',
-    gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
-    glowColor: 'rgba(56, 239, 125, 0.3)',
-    items: [
-      { name: 'R', desc: '统计分析' },
-      { name: 'ACMG', desc: '变异解读' },
-      { name: 'VEP', desc: '注释工具' },
-      { name: 'ANNOVAR', desc: '注释流程' },
-      { name: 'GATK', desc: '变异检测' },
-    ]
-  },
-  {
-    title: '生信数据库',
-    icon: '🗄️',
-    gradient: 'linear-gradient(135deg, #ee0979 0%, #ff6a00 100%)',
-    glowColor: 'rgba(238, 9, 121, 0.3)',
-    items: [
-      { name: 'OMIM', desc: '遗传疾病' },
-      { name: 'Gencode', desc: '基因注释' },
-      { name: 'PUBMED', desc: '文献检索' },
-      { name: 'ClinVar', desc: '临床变异' },
-      { name: 'UCSC', desc: '基因组浏览' },
-    ]
-  },
-]
 </script>
 
 <template>
-    <section class="section section-contianer">
+    <section :id="t.sectionTechStackId" class="section section-contianer">
         <div class="section-header">
             <div class="section-title-row">
                 <svg t="1787714827044" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -71,11 +30,7 @@ const techStacks = [
 
         <div class="section-card">
             <div class="tech-grid">
-                <div
-                    v-for="(stack, idx) in techStacks"
-                    :key="idx"
-                    class="tech-card"
-                >
+                <div v-for="(stack, idx) in t.techsList" :key="idx" class="tech-card">
                     <div class="tech-card-glow" :style="{ background: stack.glowColor }"></div>
                     <div class="tech-card-inner">
                         <div class="tech-card-header">
@@ -85,11 +40,7 @@ const techStacks = [
                             <div class="tech-card-title">{{ stack.title }}</div>
                         </div>
                         <div class="tech-card-list">
-                            <div
-                                v-for="(item, i) in stack.items"
-                                :key="i"
-                                class="tech-card-item"
-                            >   
+                            <div v-for="(item, i) in stack.items" :key="i" class="tech-card-item">
                                 <span class="tech-item-name">{{ item.name }}</span>
                                 <span class="tech-item-desc">{{ item.desc }}</span>
                             </div>

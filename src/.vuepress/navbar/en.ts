@@ -10,8 +10,8 @@ export const enNavbar = navbar([
     link: "/en/#experience",
   },
   {
-    text: "skills",
-    link: "/en/#skills",
+    text: "techs",
+    link: "/en/#techs",
   },
   {
     text: "projects",

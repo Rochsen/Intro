@@ -12,7 +12,8 @@ export interface I18nLocale {
   expTitle: string;
   experienceList?: experienceListItemType[];
   sectionProjectId: string; // 项目sectionID
-  sectionSkillId: string; // 技术栈sectionID
+  techsList?: techsListItemType[]; // 技术栈列表
+  sectionTechStackId: string; // 技术栈sectionID
   sectionEvaluteId: string; // 个人评价sectionID
 }
 
@@ -33,4 +34,17 @@ export interface experienceListItemType {
   type: "work" | "education";
   location?: string;
   description?: string;
+}
+
+// 技术栈项类型
+export interface techsListItemType {
+  title: string;
+  icon: string;
+  gradient: string;
+  glowColor: string;
+  items: techsListItemItemType[];
+}
+export interface techsListItemItemType {
+  name: string;
+  desc?: string;
 }
