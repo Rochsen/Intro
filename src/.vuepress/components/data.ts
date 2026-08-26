@@ -51,7 +51,7 @@ export const Myi18n: Record<string, I18nLocale> = {
       },
       {
         period: "2021.09 - 2022.05",
-        title: "实验室管理实习",
+        title: "实验室安全管理实习",
         subtitle: "深圳华大生命科学研究院",
         detail:
           "负责实验室日常巡检，组织过研究院入职体检、实验室安全文明评比等活动",

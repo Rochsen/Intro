@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
 
-import theme from "./theme.js";
+import theme from "./theme.ts";
 
 export default defineUserConfig({
   base: "/Intro/",
