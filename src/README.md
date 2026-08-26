@@ -37,8 +37,10 @@ const lang = usePageLang()
 </script>
 
 <ClientOnly>
-  <ProfileSection :lang="lang" />
-  <ExperienceSection :lang="lang" />
+  <div class="main-container">
+    <ProfileSection :lang="lang" />
+    <ExperienceSection :lang="lang" />
   <!-- <AchievementsSection :lang="lang" />
   <InterestsSection :lang="lang" /> -->
+  </div>
 </ClientOnly>
