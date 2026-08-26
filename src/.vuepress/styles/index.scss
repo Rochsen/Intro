@@ -190,6 +190,11 @@
       background: white !important;
     }
   }
+
+  // 深色模式，移动端，不要vp-portfolio-info的背景
+  [data-theme="dark"] .vp-portfolio-info {
+    background: none !important;
+  }
 }
 
 // 首页portfolio字体颜色
