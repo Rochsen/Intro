@@ -260,11 +260,19 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
   }
 
   .section-title-text {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .info-value {
     font-size: 1.1rem;
+  }
+
+  .section-card {
+    padding: 1.25rem !important;
+  }
+
+  .contact-item {
+    gap: 0.75rem;
   }
 }
 </style>

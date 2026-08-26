@@ -170,30 +170,42 @@ const getTypeColor = (type: string) => {
 .timeline-detail {
   font-size: 0.9rem;
   color: #6b7280;
-  font-style: italic;
+  // font-style: italic;
   line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .timeline {
-    padding-left: 1.5rem;
+  .timeline-container {
+    padding-left: 1.2rem;
   }
 
   .timeline-item {
-    padding-left: 1.5rem;
+    padding-left: 0.75rem;
+    margin-bottom: 1.25rem;
   }
 
   .timeline-marker {
-    left: -1.85rem;
+    left: -1.5rem;
+    width: 10px;
+    height: 10px;
   }
 
-  .section-title {
-    font-size: 2rem;
+  .section-title-text {
+    font-size: 1.5rem;
   }
 
-  .timeline-header {
+  .timeline-card-content {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .timeline-title {
+    font-size: 0.95rem;
+  }
+
+  .timeline-detail {
+    font-size: 0.85rem;
   }
 }
 </style>

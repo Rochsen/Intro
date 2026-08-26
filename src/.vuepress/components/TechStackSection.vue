@@ -176,6 +176,39 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 @media (max-width: 960px) {
   .tech-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tech-card-inner {
+    padding: 18px;
+  }
+
+  .tech-card-header {
+    margin-bottom: 14px;
+  }
+
+  .tech-card-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .tech-card-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-card {
+    padding: 16px !important;
+  }
+
+  .section-title-text {
+    font-size: 1.5rem;
+  }
+
+  .tech-card-item {
+    padding: 8px 12px;
   }
 }
 </style>
