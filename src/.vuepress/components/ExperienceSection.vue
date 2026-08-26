@@ -201,11 +201,11 @@ const getTypeColor = (type: string) => {
   }
 
   .timeline-title {
-    font-size: 0.95rem;
+    font-size: 0.94rem;
   }
 
   .timeline-detail {
-    font-size: 0.85rem;
+    font-size: 0.84rem;
   }
 }
 </style>

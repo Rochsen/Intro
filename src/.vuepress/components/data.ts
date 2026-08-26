@@ -30,14 +30,14 @@ export const Myi18n: Record<string, I18nLocale> = {
       {
         period: "2024.01 - 2026.01",
         title: "生物信息分析工程师",
-        subtitle: "广州序源医学科技有限公司",
+        subtitle: "广州序源医学科技",
         detail: "负责公司样本数据运维、LIMS系统的前端开发，以及WES项目的维护",
         type: "work",
       },
       {
         period: "2022.06 - 2023.12",
         title: "生物信息助理工程师",
-        subtitle: "广州序源医学科技有限公司",
+        subtitle: "广州序源医学科技",
         detail: "提供实验室数据统计自动化方案，以及WES变异位点检测流程的搭建",
         type: "work",
       },
@@ -52,7 +52,7 @@ export const Myi18n: Record<string, I18nLocale> = {
       {
         period: "2021.09 - 2022.05",
         title: "实验室安全管理实习",
-        subtitle: "深圳华大生命科学研究院",
+        subtitle: "深圳华大研究院",
         detail:
           "负责实验室日常巡检，组织过研究院入职体检、实验室安全文明评比等活动",
         type: "work",
