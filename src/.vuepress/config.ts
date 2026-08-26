@@ -10,12 +10,10 @@ export default defineUserConfig({
     "/en/": {
       lang: "en-US",
       title: "Intro",
-      description: "Full stack biometric analysis engineer",
     },
     "/": {
       lang: "zh-CN",
       title: "Intro",
-      description: "全栈式生信分析工程师",
     },
   },
 

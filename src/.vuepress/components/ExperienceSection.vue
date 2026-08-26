@@ -59,7 +59,7 @@ const getTypeColor = (type: string) => {
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 .timeline-container {
   position: relative;

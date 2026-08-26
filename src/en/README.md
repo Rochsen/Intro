@@ -24,9 +24,9 @@ copyright: "Copyright © 2026 | Luo Haosen. All rights reserved."
 <script setup>
 import ProfileSection from '../.vuepress/components/ProfileSection.vue'
 import ExperienceSection from '../.vuepress/components/ExperienceSection.vue'
-import AchievementsSection from '../.vuepress/components/AchievementsSection.vue'
+import TechStackSection from '../.vuepress/components/TechStackSection.vue'
+import ProjectSection from '../.vuepress/components/ProjectSection.vue'
 import InterestsSection from '../.vuepress/components/InterestsSection.vue'
-import ContactSection from '../.vuepress/components/ContactSection.vue'
 
 import { ref } from 'vue'
 import { usePageLang } from 'vuepress/client'
@@ -40,7 +40,8 @@ const lang = usePageLang()
   <div class="main-container">
     <ProfileSection :lang="lang" />
     <ExperienceSection :lang="lang" />
-  <!-- <AchievementsSection :lang="lang" />
-  <InterestsSection :lang="lang" /> -->
+    <TechStackSection :lang="lang" />
+    <ProjectSection :lang="lang" />
+    <InterestsSection :lang="lang" />
   </div>
 </ClientOnly>

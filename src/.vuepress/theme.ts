@@ -2,7 +2,6 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 
-
 // 社交媒体信息
 export const mediasConfig = {
   BiliBili: "https://space.bilibili.com/361524948",
@@ -32,27 +31,16 @@ export default hopeTheme({
       navbar: zhNavbar,
       footer: "默认页脚",
       displayFooter: false,
-      // blog: {
-      //   medias: mediasConfig,
-      // },
     },
     "/en/": {
       navbar: enNavbar,
       footer: "Default footer",
       displayFooter: false,
-      // blog: {
-      //   medias: mediasConfig,
-      // },
     },
   },
 
-  // These features are enabled for demo, only preserve features you need here
-
+  // 多语言按钮需要 blog 开启
   plugins: {
-    // blog: true,
+    blog: true,
   },
-
-  // logo: "/logo.svg",
-
-  // repo: "Rochsen/Intro",
 });
