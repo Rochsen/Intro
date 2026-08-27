@@ -3,6 +3,7 @@ import { MyContacts } from "./contactData.ts";
 import { MyPersonality } from "./personalityData.ts";
 import { MyExperience } from "./experenceData.ts";
 import { MyTechsList } from "./techData.ts";
+import { MyProjectList } from "./projectData.ts";
 
 // 语言包
 export const Myi18n: Record<string, I18nLocale> = {
@@ -24,7 +25,7 @@ export const Myi18n: Record<string, I18nLocale> = {
     techsList: MyTechsList["zh-CN"],
     sectionProjectId: "项目", // 项目sectionID
     projectTitle: "项目",
-    projectList: [],
+    projectList: MyProjectList["zh-CN"],
     sectionInterestsId: "兴趣", // 个人评价sectionID
     interestsTitle: "兴趣",
     interestList: [],
@@ -50,7 +51,7 @@ export const Myi18n: Record<string, I18nLocale> = {
     techsList: MyTechsList["en-US"],
     sectionProjectId: "projects", // 项目sectionID
     projectTitle: "Project",
-    projectList: [],
+    projectList: MyProjectList["zh-CN"],
     sectionInterestsId: "interests", // 兴趣sectionID
     interestsTitle: "Interests",
     interestList: [],
