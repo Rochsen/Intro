@@ -119,76 +119,16 @@
   --external-link-c-icon: white;
 }
 
-// 移动端菜单打开时：隐藏Brand和语言切换，仅保留关闭按钮
+// 移动端：隐藏汉堡菜单按钮，显示模式切换按钮
 @media (max-width: 768px) {
-  .vp-navbar:has(.vp-toggle-navbar-button.is-active) {
-    // 隐藏Brand
-    .vp-navbar-start {
-      visibility: hidden;
-    }
-
-    // 隐藏语言切换
-    .vp-dropdown-wrapper {
-      visibility: hidden;
-    }
-
-    // 浅色模式：关闭图标改为黑色
-    .vp-toggle-navbar-button .vp-top,
-    .vp-toggle-navbar-button .vp-middle,
-    .vp-toggle-navbar-button .vp-bottom {
-      background: black !important;
-    }
+  // 隐藏汉堡菜单按钮
+  .vp-toggle-navbar-button {
+    display: none !important;
   }
 
-  .vp-nav-screen {
-    // 菜单打开时，Brand改为黑色
-    .vp-site-name {
-      color: black !important;
-    }
-
-    // 菜单打开时，语言选择和外观按钮改为黑色
-    .vp-dropdown-title,
-    .vp-dropdown-wrapper .vp-dropdown-title,
-    .vp-appearance-button,
-    .vp-color-mode-switch {
-      color: black !important;
-    }
-
-    // 菜单打开时，下拉箭头改为黑色
-    .vp-dropdown-title .arrow {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='rgba(0,0,0,0.8)' d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z'/%3E%3C/svg%3E") !important;
-    }
-
-    // 菜单打开时，外部链接图标改为黑色
-    .external-link-icon .external-link::after,
-    .vp-external-link-icon::after {
-      background: black !important;
-    }
-  }
-
-  // 深色模式 + 移动端菜单打开：模式切换图标恢复白色
-  [data-theme="dark"] .vp-nav-screen {
-    .vp-color-mode-switch,
-    .vp-color-mode-switch svg,
-    .vp-color-mode-switch .icon {
-      color: white !important;
-      fill: white !important;
-    }
-
-    .vp-appearance-button,
-    .vp-appearance-button svg {
-      color: white !important;
-      fill: white !important;
-    }
-  }
-
-  // 深色模式 + 菜单打开：关闭图标保持白色
-  [data-theme="dark"] .vp-navbar:has(.vp-toggle-navbar-button.is-active) {
-    .vp-toggle-navbar-button .vp-top,
-    .vp-toggle-navbar-button .vp-middle,
-    .vp-toggle-navbar-button .vp-bottom {
-      background: white !important;
-    }
+  // 让模式切换按钮在移动端可见（覆盖hide-in-mobile）
+  .hide-in-mobile.vp-nav-item:has(.vp-color-mode-switch) {
+    display: block !important;
   }
 
   // 深色模式，移动端，不要vp-portfolio-info的背景
