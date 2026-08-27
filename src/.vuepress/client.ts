@@ -1,6 +1,5 @@
 import { defineClientConfig } from "vuepress/client";
 import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentNavbar.js";
-// import Home from "./layouts/Home.vue";
 
 export default defineClientConfig({
   setup() {
@@ -33,9 +32,4 @@ export default defineClientConfig({
       document.addEventListener('click', handleClick);
     }
   },
-
-  // 布局
-  // layouts: {
-  //   Home,
-  // },
 });

@@ -12,7 +12,7 @@ export const mediasConfig = {
 };
 
 export default hopeTheme({
-  hostname: "https://rochsen.github.io/",
+  hostname: "https://rochsen.github.io/intro",
 
   navbarLayout: {
     start: ["Brand"],
@@ -39,8 +39,53 @@ export default hopeTheme({
     },
   },
 
-  // 多语言按钮需要 blog 开启
+  // These features are enabled for demo, only preserve features you need here
+  markdown: {
+    align: true,
+    attrs: true,
+    codeTabs: true,
+    component: true,
+    demo: true,
+    figure: true,
+    gfm: true,
+    imgLazyload: true,
+    imgSize: true,
+    include: true,
+    mark: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em") {
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+          }
+        },
+      },
+    ],
+    sub: true,
+    sup: true,
+    tabs: true,
+    tasklist: true,
+    vPre: true,
+  },
+
+  // 插件配置
   plugins: {
+    // 多语言按钮需要 blog 开启
     blog: true,
+
+    components: {
+      components: ["Badge"],
+    },
+
+    icon: {
+      prefix: "//at.alicdn.com/t/c/font_5224531_dnv00kxx81w.css",
+    },
   },
 });
