@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Myi18n } from "./data.ts";
+import { Myi18n } from "./data/index.ts";
 import { computed } from "vue";
 
 const props = defineProps({

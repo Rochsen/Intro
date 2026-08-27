@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Myi18n } from "./data.ts";
+import { Myi18n } from "./data/index.ts";
 import { computed } from "vue";
 
 const props = defineProps({
@@ -26,8 +26,10 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
     <div class="section-divider"></div>
   </div>
 
-  <!-- 项目卡片 -->
-  <div class="section-card"></div>
+  <!-- 项目多卡片容器 -->
+  <div class="section-card">
+
+  </div>
 </section>
 </template>
 
