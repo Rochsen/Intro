@@ -5,14 +5,13 @@ name: Luo Haosen
 avatar: /favicon.ico
 titles:
   [
-    "是一名 全栈生信分析工程师",
-    "Yes Indeed",
-    "The sun is a wondrous body, Like a magnificent father",
-    "Long May The Sun Shine",
+    "Bioinformatics Engineer",
+    "Full Stack Developer",
+    "Welcome to my portfolio"
   ]
 welcome: "👋 HI THERE, I AM"
 bgImage: /assets/wallpaper-3.jpg
-avatarStyle: { width: "300px", height: "300px", align-items: "center" }
+avatarStyle: { width: "250px", height: "250px", borderRadius: "50%", border: "5px solid rgba(100, 180, 255, 0.7)", boxShadow: "0 0 40px rgba(100, 180, 255, 0.5), 0 0 80px rgba(100, 180, 255, 0.3)" }
 content: "portfolio"
 icon: house
 title: 主页

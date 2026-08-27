@@ -1,7 +1,7 @@
 // place your custom styles here
 // 首页容器
 .vp-portfolio-container {
-  padding: 70px 0 70px; // 默认padding
+  padding: 70px 0; // 默认padding
   // padding: 60px 0;
 }
 
@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 70%;
 }
 
 // 站点名称样式
@@ -43,24 +44,18 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
-// 导航栏高度
-// .vp-navbar {
-// height: 10vh;
-// }
 
 // 导航links之间的间距
 .vp-nav-links {
   column-gap: 0.5rem;
   text-transform: uppercase;
 }
-// 导航item字体大小
-.vp-nav-item {
-  // font-size: 1.2rem;
-}
 
 // 导航栏过渡动画（透明 ↔ 已滚动状态切换）
 .vp-navbar {
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 // 透明导航栏状态下，所有按钮和下拉菜单保持白色
@@ -119,24 +114,6 @@
   --external-link-c-icon: white;
 }
 
-// 移动端：隐藏汉堡菜单按钮，显示模式切换按钮
-@media (max-width: 768px) {
-  // 隐藏汉堡菜单按钮
-  .vp-toggle-navbar-button {
-    display: none !important;
-  }
-
-  // 让模式切换按钮在移动端可见（覆盖hide-in-mobile）
-  .hide-in-mobile.vp-nav-item:has(.vp-color-mode-switch) {
-    display: block !important;
-  }
-
-  // 深色模式，移动端，不要vp-portfolio-info的背景
-  [data-theme="dark"] .vp-portfolio-info {
-    background: none !important;
-  }
-}
-
 // 首页portfolio字体颜色
 .vp-portfolio-welcome {
   color: var(--vp-portfolio-welcome);
@@ -159,27 +136,10 @@
   margin: 4rem 11.25rem 0;
 }
 
-@media (max-width: 960px) {
-  .main-container {
-    margin: 2rem 1rem 0;
-    padding: 0 12px;
-  }
-}
-
 /* 单个section */
 .section-container {
   background: var(--section-bg);
   padding: 32px 0 48px;
-}
-
-@media (max-width: 768px) {
-  .section-container {
-    padding: 20px 0 32px;
-  }
-}
-
-/* section的header */
-.section-header {
 }
 
 /* section标题行 */
@@ -213,9 +173,8 @@
   opacity: 0.8;
   margin: 0.5rem 0; /* 微调了margin，去掉左右，防止撑破布局 */
 
-  /* 核心修改：通过裁剪实现左粗右细 */
+  /* 通过裁剪实现左粗右细 */
   /* (0 0 是左上角，100% 40% 是右上角向下压，100% 60% 是右下角，0 100% 是左下角) */
-  /* 这里右边只有20%的高度，左边是100%高度，形成了由粗变细的细线 */
   clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%);
 }
 /* section圆角矩形 */
@@ -228,23 +187,36 @@
   border: var(--section-card-border);
 }
 
-// ============================================================
-// SCSS Mixin 版本 - 需要在组件 style 中 @include 调用
-// 用法: @include section-divider;
-// ============================================================
-// @mixin section-divider(
-//   $height: 0.3rem,
-//   $width: 10%,
-//   $margin: 0.5rem,
-//   $opacity: 0.8
-// ) {
-//   height: $height;
-//   width: $width;
-//   background-image: linear-gradient(
-//     45deg,
-//     rgb(59, 136, 241),
-//     rgba(247, 246, 249, 0.879)
-//   );
-//   opacity: $opacity;
-//   margin: $margin;
-// }
+// 移动端：隐藏汉堡菜单按钮，显示模式切换按钮
+@media (max-width: 768px) {
+  // 单个section的padding
+  .section-container {
+    padding: 20px 0 32px;
+  }
+
+  .vp-portfolio-avatar {
+    width: 100%;
+  }
+
+  // 隐藏汉堡菜单按钮
+  .vp-toggle-navbar-button {
+    display: none !important;
+  }
+
+  // 让模式切换按钮在移动端可见（覆盖hide-in-mobile）
+  .hide-in-mobile.vp-nav-item:has(.vp-color-mode-switch) {
+    display: block !important;
+  }
+
+  // 深色模式，移动端，不要vp-portfolio-info的背景
+  [data-theme="dark"] .vp-portfolio-info {
+    background: none !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .main-container {
+    margin: 2rem 1rem 0;
+    padding: 0 12px;
+  }
+}

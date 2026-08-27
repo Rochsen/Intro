@@ -1,18 +1,17 @@
 ---
 portfolio: true
 home: true
-name: 我是 罗浩森
+name: 罗浩森
 avatar: /favicon.ico
 titles:
   [
-    "是一名 全栈生信分析工程师",
-    "Yes Indeed",
-    "The sun is a wondrous body, Like a magnificent father",
-    "Long May The Sun Shine",
+    "生物信息分析工程师",
+    "全栈开发工程师",
+    "欢迎来看我的个人简介"
   ]
-welcome: "👋 你好, 很高兴认识你"
+welcome: "👋 你好, 我是"
 bgImage: /assets/wallpaper-3.jpg
-avatarStyle: { width: "300px", height: "300px", align-items: "center" }
+avatarStyle: { width: "250px", height: "250px", borderRadius: "50%", border: "5px solid rgba(100, 180, 255, 0.7)", boxShadow: "0 0 40px rgba(100, 180, 255, 0.5), 0 0 80px rgba(100, 180, 255, 0.3)" }
 content: "portfolio"
 icon: house
 title: 主页
