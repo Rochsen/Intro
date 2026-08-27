@@ -18,12 +18,18 @@ export const Myi18n: Record<string, I18nLocale> = {
         iconType: "google",
       },
       {
-        label: "QQ邮箱",
-        value: "1029143329@qq.com",
-        link: "mailto:1029143329@qq.com",
+        label: "私人邮箱",
+        value: "rochsen1011@qq.com",
+        link: "mailto:rochsen1011@qq.com",
         iconType: "qq",
       },
     ],
+    personality: {
+      label: "人格类型",
+      value: "INFJ",
+      desc: "鉴赏家",
+      img: "https://pic1.imgdb.cn/i/0345mMFuVE5qWysT0qr39Z.svg",
+    },
     sectionExpId: "经历", // 经历sectionID
     expTitle: "经历",
     experienceList: [
@@ -142,12 +148,18 @@ export const Myi18n: Record<string, I18nLocale> = {
         iconType: "google",
       },
       {
-        label: "QQ EMAIL",
-        value: "1029143329@qq.com",
+        label: "PERSONAL EMAIL",
+        value: "rochsen1011@qq.com",
         link: "mailto:1029143329@qq.com",
         iconType: "qq",
       },
     ],
+    personality: {
+      label: "PERSIONALITY",
+      value: "INFJ",
+      desc: "Connoisseur",
+      img: "https://pic1.imgdb.cn/i/0345mMFuVE5qWysT0qr39Z.svg",
+    },
     sectionExpId: "experience", // 经历sectionID
     expTitle: "Experience",
     experienceList: [

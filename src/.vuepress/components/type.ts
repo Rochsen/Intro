@@ -1,28 +1,35 @@
 // 单语言文案类型
 export interface I18nLocale {
   sectionProfileId: string; // 档案sectionID
-  profileTitle?: string;
-  education?: string;
-  position?: string;
-  contacts?: string;
-  positionValue?: string;
-  educationValue?: string;
-  contactList?: ContactItemType[];
+  profileTitle?: string; // 档案section的头标题
+  education?: string; // 毕业院校
+  position?: string; // 职业tag文字
+  contacts?: string; // 联系方式tag文字
+  positionValue?: string; // 职业tag值
+  educationValue?: string; // 毕业院校tag
+  contactList?: ContactItemType[]; // 联系方式数组
+  personality?: {
+    // 个人性格
+    label: string; // 16人格类型tag文字
+    value: string; // 16人格类型tag值, 如INFJ
+    desc: string;  // 16人格类型描述，比如 鉴赏家家
+    img: string; // 16人格类型Q版图片链接
+  };
   sectionExpId: string; // 经历sectionID
-  expTitle: string;
-  experienceList?: experienceListItemType[];
+  expTitle: string; // 经历section的头标题
+  experienceList?: experienceListItemType[]; // 经历项数组
   sectionTechStackId: string; // 技术栈sectionID
-  techTitle: string;
-  techsList?: techsListItemType[];
+  techTitle: string; // 技术栈section的头标题
+  techsList?: techsListItemType[]; // 技术栈项数组
   sectionProjectId: string; // 项目sectionID
-  projectTitle: string;
-  projectList?: projectListItemType[];
+  projectTitle: string; // 项目section的头标题
+  projectList?: projectListItemType[]; // 项目项数组
   sectionInterestsId: string; // 兴趣sectionID
-  interestsTitle: string;
-  interestList?: InterestType[];
+  interestsTitle: string; // 兴趣section的头标题
+  interestList?: InterestType[]; // 兴趣项数组
   sectionWelcomeId: string; // 结尾欢迎
-  welcomeTitle: string;
-  welcomeDescription?: string;
+  welcomeTitle: string; // 结尾欢迎
+  welcomeDescription?: string; // 结尾欢迎描述
 }
 
 // 联系方式项类型
