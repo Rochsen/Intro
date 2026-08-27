@@ -5,7 +5,7 @@ import { MyExperience } from "./experenceData.ts";
 import { MyTechsList } from "./techData.ts";
 import { MyProjectList } from "./projectData.ts";
 
-// 语言包
+/** 语言包 */
 export const Myi18n: Record<string, I18nLocale> = {
   "zh-CN": {
     sectionProfileId: "档案", // 档案sectionID
