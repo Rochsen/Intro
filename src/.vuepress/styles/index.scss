@@ -128,7 +128,7 @@
 /* 最外层容器 */
 .main-container {
   padding: 0 24px;
-  margin: 4rem 11.25rem 0;
+  margin: var(--navbar-height) 11.25rem 0;
 }
 
 /* 单个section */
@@ -189,7 +189,7 @@
 
 @media (max-width: 960px) {
   .main-container {
-    margin: 2rem 1rem 0;
+    margin: var(--navbar-mobile-height, var(--navbar-height)) 1rem 0;
     padding: 0 12px;
   }
 }

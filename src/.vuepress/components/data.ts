@@ -48,7 +48,7 @@ export const Myi18n: Record<string, I18nLocale> = {
         type: "work",
       },
       {
-        period: "2021.10 - 2022.05",
+        period: "2022.06",
         title: "农学学士",
         subtitle: "仲恺农业工程学院",
         detail:
@@ -64,7 +64,7 @@ export const Myi18n: Record<string, I18nLocale> = {
         type: "work",
       },
       {
-        period: "2020.09 - 2021.06",
+        period: "2020.09 - 2022.06",
         title: "仲华基因科技产业班",
         subtitle: "仲恺农业工程学院",
         detail:
@@ -180,7 +180,7 @@ export const Myi18n: Record<string, I18nLocale> = {
         type: "work",
       },
       {
-        period: "Oct. 2021 - May 2022",
+        period: "Jun. 2022",
         title: "Bachelor of Agriculture",
         subtitle: "Zhongkai University of Agriculture and Engineering",
         detail:
@@ -188,7 +188,7 @@ export const Myi18n: Record<string, I18nLocale> = {
         type: "education",
       },
       {
-        period: "Sep. 2021 - May 2022",
+        period: "Sep. 2021 - May. 2022",
         title: "Laboratory Management Intern",
         subtitle: "BGI Institute of Life Sciences, Shenzhen",
         detail:
@@ -196,7 +196,7 @@ export const Myi18n: Record<string, I18nLocale> = {
         type: "work",
       },
       {
-        period: "Sep. 2020 - Jun. 2021",
+        period: "Sep. 2020 - Jun. 2022",
         title: "Zhonghua Gene Technology Industry Program",
         subtitle: "Zhongkai University of Agriculture and Engineering",
         detail:
