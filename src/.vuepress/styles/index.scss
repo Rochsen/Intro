@@ -60,39 +60,6 @@
 
 // 透明导航栏状态下，所有按钮和下拉菜单保持白色
 .transparent-navbar .vp-navbar {
-  .vp-color-mode-switch,
-  .vp-dropdown-title,
-  .vp-dropdown-subtitle,
-  .vp-appearance-button,
-  .slimsearch-button,
-  .DocSearch-Button,
-  .vp-nav-item a,
-  .vp-nav-item button {
-    color: white !important;
-  }
-
-  // 所有下拉菜单相关元素
-  .vp-dropdown-wrapper {
-    .vp-dropdown-title,
-    .vp-dropdown-subtitle,
-    .vp-dropdown .vp-dropdown-title {
-      color: white !important;
-    }
-  }
-
-  // 语言选择按钮（可能有多个选择器）
-  .vp-dropdown-wrapper .vp-dropdown-title,
-  .vp-dropdown-wrapper button {
-    color: white !important;
-  }
-
-  // 外观切换按钮内的 SVG 图标
-  .vp-color-mode-switch svg,
-  .vp-appearance-button svg {
-    color: white !important;
-    fill: white !important;
-  }
-
   // 语言选择的下拉箭头图标
   .vp-dropdown-wrapper svg {
     color: white !important;
@@ -102,12 +69,6 @@
   // 下拉菜单的箭头指示器（SVG背景图片）
   .vp-dropdown-title .arrow {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='rgba(255,255,255,0.8)' d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z'/%3E%3C/svg%3E") !important;
-  }
-
-  // 外部链接图标（博客↗箭头）
-  .external-link-icon .external-link::after,
-  .vp-external-link-icon::after {
-    background: white !important;
   }
 
   // 覆盖外部链接图标颜色变量
@@ -177,6 +138,7 @@
   /* (0 0 是左上角，100% 40% 是右上角向下压，100% 60% 是右下角，0 100% 是左下角) */
   clip-path: polygon(0 0, 100% 40%, 100% 60%, 0 100%);
 }
+
 /* section圆角矩形 */
 .section-card {
   border-radius: var(--section-card-radius);
