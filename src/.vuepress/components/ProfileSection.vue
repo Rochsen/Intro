@@ -281,6 +281,10 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
   color: var(--section-primary);
 }
 
+.contact-value:after {
+  content: "";
+}
+
 @media (max-width: 768px) {
   .profile-grid {
     grid-template-columns: 1fr;

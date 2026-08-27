@@ -91,6 +91,16 @@
   }
 }
 
+// 移除导航栏外部链接的箭头图标
+.vp-navbar .external-link::after {
+  content: none !important;
+}
+
+// 移除档案区域联系链接的箭头图标
+.section-card .contact-value::after {
+  content: none !important;
+}
+
 // ============================================================
 // 首页 Portfolio 样式
 // ============================================================
