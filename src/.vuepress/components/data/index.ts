@@ -46,14 +46,14 @@ export const Myi18n: Record<string, I18nLocale> = {
     sectionExpId: "experience", // 经历sectionID
     expTitle: "Experience",
     experienceList: MyExperience["en-US"],
-    sectionTechStackId: "techs", // 技术栈sectionID
+    sectionTechStackId: "tech", // 技术栈sectionID
     techTitle: "TechStack",
     techsList: MyTechsList["en-US"],
-    sectionProjectId: "projects", // 项目sectionID
+    sectionProjectId: "project", // 项目sectionID
     projectTitle: "Project",
     projectList: MyProjectList["en-US"],
-    sectionInterestsId: "interests", // 兴趣sectionID
-    interestsTitle: "Interests",
+    sectionInterestsId: "interest", // 兴趣sectionID
+    interestsTitle: "Interest",
     interestList: [],
     sectionWelcomeId: "welcome", // 结尾欢迎
     welcomeTitle: "Welcome",

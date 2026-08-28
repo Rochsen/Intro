@@ -10,16 +10,16 @@ export const enNavbar = navbar([
     link: "/en/#experience",
   },
   {
-    text: "techs",
-    link: "/en/#techs",
+    text: "tech",
+    link: "/en/#tech",
   },
   {
-    text: "projects",
-    link: "/en/#projects",
+    text: "project",
+    link: "/en/#project",
   },
   {
-    text: "interests",
-    link: "/en/#interests",
+    text: "interest",
+    link: "/en/#interest",
   },
   {
     text: "welcome",
