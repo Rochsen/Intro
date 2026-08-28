@@ -1,4 +1,4 @@
-import { techsListItemType } from "../type/index.ts";
+import type { techsListItemType } from "../type/tech.ts";
 
 /**
  * 技术栈数组

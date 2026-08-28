@@ -1,4 +1,4 @@
-import { PersonalityType } from "../type/index.ts";
+import type { personalityType } from "../type/personality.ts";
 
 // 16类型人格图
 const _personality_img = "https://pic1.imgdb.cn/i/0345mMFuVE5qWysT0qr39Z.svg";
@@ -6,7 +6,7 @@ const _personality_img = "https://pic1.imgdb.cn/i/0345mMFuVE5qWysT0qr39Z.svg";
 /**
  * 16人格类型tag文字
  */
-export const MyPersonality: Record<string, PersonalityType> = {
+export const MyPersonality: Record<string, personalityType> = {
   "zh-CN": {
     label: "人格类型",
     value: "INFJ",

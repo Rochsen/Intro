@@ -1,9 +1,9 @@
-import { ContactItemType } from "../type/index.ts";
+import { contactItemType } from "../type/contact.ts";
 
 /**
  * 联系方式数组
  */
-export const MyContacts: Record<string, ContactItemType[]> = {
+export const MyContacts: Record<string, contactItemType[]> = {
   "zh-CN": [
     {
       label: "谷歌邮箱",

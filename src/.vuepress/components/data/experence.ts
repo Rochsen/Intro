@@ -1,4 +1,4 @@
-import { experienceListItemType } from "../type/index.ts";
+import { experienceListItemType } from "../type/experence.ts";
 
 /**
  * 经历数组
