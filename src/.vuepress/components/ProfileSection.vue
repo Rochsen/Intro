@@ -122,7 +122,7 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 /* 档案信息左右分块 */
 .profile-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: .5rem;
 }
 

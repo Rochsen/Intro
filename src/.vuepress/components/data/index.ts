@@ -1,9 +1,9 @@
 import { I18nLocale } from "../type/index.ts";
-import { MyContacts } from "./contactData.ts";
-import { MyPersonality } from "./personalityData.ts";
-import { MyExperience } from "./experenceData.ts";
-import { MyTechsList } from "./techData.ts";
-import { MyProjectList } from "./projectData.ts";
+import { MyContacts } from "./contact.ts";
+import { MyPersonality } from "./personality.ts";
+import { MyExperience } from "./experence.ts";
+import { MyTechsList } from "./tech.ts";
+import { MyProjectList } from "./project.ts";
 
 /** 语言包 */
 export const Myi18n: Record<string, I18nLocale> = {
@@ -15,17 +15,17 @@ export const Myi18n: Record<string, I18nLocale> = {
     contacts: "联系方式",
     positionValue: "生物信息分析工程师",
     educationValue: "仲恺农业工程学院",
-    contactList: MyContacts["zh-CN"],
-    personality: MyPersonality["zh-CN"],
+    contactList: MyContacts["zh-CN"], // 联系方式数组
+    personality: MyPersonality["zh-CN"], // 16人格类型
     sectionExpId: "经历", // 经历sectionID
     expTitle: "经历",
-    experienceList: MyExperience["zh-CN"],
+    experienceList: MyExperience["zh-CN"], // 经历项数组
     sectionTechStackId: "技术栈", // 技术栈sectionID
     techTitle: "技术栈",
     techsList: MyTechsList["zh-CN"],
     sectionProjectId: "项目", // 项目sectionID
     projectTitle: "项目",
-    projectList: MyProjectList["zh-CN"],
+    projectList: MyProjectList["zh-CN"], // 项目项数组
     sectionInterestsId: "兴趣", // 个人评价sectionID
     interestsTitle: "兴趣",
     interestList: [],
@@ -51,7 +51,7 @@ export const Myi18n: Record<string, I18nLocale> = {
     techsList: MyTechsList["en-US"],
     sectionProjectId: "projects", // 项目sectionID
     projectTitle: "Project",
-    projectList: MyProjectList["zh-CN"],
+    projectList: MyProjectList["en-US"],
     sectionInterestsId: "interests", // 兴趣sectionID
     interestsTitle: "Interests",
     interestList: [],

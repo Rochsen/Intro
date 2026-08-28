@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { Myi18n } from "./data/index.ts";
-import { computed } from "vue";
+import { computed, ref } from "vue";
+import ProjectCard from "./project/ProjectCard.vue";
+import ProjectModal from "./project/ProjectModal.vue";
+import type { projectListItemType } from "./type/project.ts";
 
 const props = defineProps({
   lang: {
@@ -9,6 +12,9 @@ const props = defineProps({
   },
 });
 const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
+
+/** 当前在模态框中查看的项目 */
+const activeProject = ref<projectListItemType | null>(null);
 </script>
 
 <template>
@@ -28,9 +34,41 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 
   <!-- 项目多卡片容器 -->
   <div class="section-card">
-
+    <ProjectCard
+      v-for="project in t.projectList"
+      :key="project.id"
+      :project="project"
+      @click="activeProject = project"
+    />
   </div>
+
+  <!-- 项目详情模态框 -->
+  <ProjectModal
+    :project="activeProject"
+    :visible="activeProject !== null"
+    :lang="lang"
+    @close="activeProject = null"
+  />
 </section>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.section-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .section-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-card {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

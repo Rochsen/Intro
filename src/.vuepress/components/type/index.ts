@@ -1,9 +1,9 @@
-import { contactItemType } from "./contactType.ts";
-import { personalityType } from "./personalityType.ts";
-import { experienceListItemType } from "./experenceType.ts";
-import { techsListItemType } from "./techType.ts";
-import { projectListItemType } from "./projectType.ts";
-import { interestType } from "./interestType.ts";
+import { contactItemType } from "./contact.ts";
+import { personalityType } from "./personality.ts";
+import { experienceListItemType } from "./experence.ts";
+import { techsListItemType } from "./tech.ts";
+import { projectListItemType } from "./project.ts";
+import { interestType } from "./interest.ts";
 
 /**
  * 语言切换文案类型
