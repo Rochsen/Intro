@@ -1,9 +1,9 @@
-import { ContactItemType } from "./contactType.ts";
-import { PersonalityType } from "./personalityType.ts";
+import { contactItemType } from "./contactType.ts";
+import { personalityType } from "./personalityType.ts";
 import { experienceListItemType } from "./experenceType.ts";
 import { techsListItemType } from "./techType.ts";
 import { projectListItemType } from "./projectType.ts";
-import { InterestType } from "./interestType.ts";
+import { interestType } from "./interestType.ts";
 
 /**
  * 语言切换文案类型
@@ -16,8 +16,8 @@ export interface I18nLocale {
   contacts?: string; // 联系方式tag文字
   positionValue?: string; // 职业tag值
   educationValue?: string; // 毕业院校tag
-  contactList?: ContactItemType[]; // 联系方式数组
-  personality?: PersonalityType;
+  contactList?: contactItemType[]; // 联系方式数组
+  personality?: personalityType;
 
   sectionExpId: string; // 经历sectionID
   expTitle: string; // 经历section的头标题
@@ -33,7 +33,7 @@ export interface I18nLocale {
 
   sectionInterestsId: string; // 兴趣sectionID
   interestsTitle: string; // 兴趣section的头标题
-  interestList?: InterestType[]; // 兴趣项数组
+  interestList?: interestType[]; // 兴趣项数组
 
   sectionWelcomeId: string; // 结尾欢迎sectionID
   welcomeTitle: string; // 结尾欢迎
