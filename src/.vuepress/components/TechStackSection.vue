@@ -55,7 +55,8 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 .section-card {
   border: none !important;
   box-shadow: none !important;
-  padding: 20px !important;
+  padding: 0 !important;
+  margin: 15px auto 0 !important;
 }
 
 .tech-grid {

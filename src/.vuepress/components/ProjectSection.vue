@@ -55,9 +55,13 @@ const activeProject = ref<projectListItemType | null>(null);
 <style scoped lang="scss">
 .section-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.2rem;
   align-items: stretch;
+  padding: 0 !important;
+  margin: 15px auto 0;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 @media (max-width: 1024px) {
