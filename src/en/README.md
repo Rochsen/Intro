@@ -5,8 +5,8 @@ name: Luo Haosen
 avatar: /favicon.ico
 titles:
   [
-    "Bioinformatics Engineer",
-    "Full Stack Developer",
+    "such as Bioinformatics Engineer",
+    "also Front-End Developer",
     "Welcome to my portfolio"
   ]
 welcome: "👋 HI THERE, I AM"
