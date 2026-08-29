@@ -55,7 +55,7 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
         </div>
       </div>
 
-      <div class="grid-middle">
+      <!-- <div class="grid-middle">
         <div class="personality-section">
           <div class="info-tag">
             <svg t="1787809141536" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="grid-right">
         <div class="contacts-section">
@@ -122,7 +122,7 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 /* 档案信息左右分块 */
 .profile-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: .5rem;
 }
 
