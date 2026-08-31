@@ -1,19 +1,3 @@
-<script setup lang="ts">
-import { computed } from "vue";
-import { Myi18n } from "./data/index.ts";
-
-// 组件参数
-const props = defineProps({
-  lang: {
-    type: String,
-    default: "zh-CN",
-  },
-});
-
-// 渲染工具
-const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
-</script>
-
 <template>
 <section :id="t.sectionProfileId" class="section section-container">
   <div class="section-header">
@@ -55,27 +39,6 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
         </div>
       </div>
 
-      <!-- <div class="grid-middle">
-        <div class="personality-section">
-          <div class="info-tag">
-            <svg t="1787809141536" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              p-id="4372" width="14" height="14">
-              <path
-                d="M790.4 560.64a108.8 108.8 0 0 1 74.688 29.248c19.84 18.688 30.912 44.16 30.912 70.592v33.28C896 824.96 765.056 960 544 960S192 824.96 192 693.76v-33.28c0-26.496 11.136-51.84 30.912-70.592A108.8 108.8 0 0 1 297.6 560.64h492.8z m0 66.56h-492.8a36.288 36.288 0 0 0-24.896 9.728 32.384 32.384 0 0 0-10.304 23.552v33.28c0 95.68 100.8 199.68 281.6 199.68s281.6-104 281.6-199.68v-33.28a32.384 32.384 0 0 0-10.304-23.552 36.224 36.224 0 0 0-24.896-9.728zM544 128c51.328 0 100.608 19.264 136.896 53.632 36.288 34.304 56.704 80.832 56.704 129.408 0 48.576-20.416 95.104-56.704 129.408A199.424 199.424 0 0 1 544 494.08a199.424 199.424 0 0 1-136.896-53.632 178.112 178.112 0 0 1-56.704-129.408c0-48.576 20.416-95.104 56.704-129.408A199.424 199.424 0 0 1 544 128z m0 66.56c-32.64 0-64 12.288-87.104 34.112a113.344 113.344 0 0 0-36.096 82.368c0 30.912 12.992 60.544 36.096 82.368 23.04 21.824 54.4 34.112 87.104 34.112 32.64 0 64-12.288 87.104-34.112s36.096-51.456 36.096-82.368c0-30.912-12.992-60.544-36.096-82.368A126.912 126.912 0 0 0 544 194.56z"
-                fill="#1296db" p-id="4373"></path>
-            </svg>
-            <span>{{ t.personality?.label }}</span>
-          </div>
-          <div class="personality-content">
-            <img :src="t.personality?.img" class="personality-image" />
-            <div class="personality-text">
-              <div class="personality-code">{{ t.personality?.value }}</div>
-              <div class="personality-name">{{ t.personality?.desc }}</div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <div class="grid-right">
         <div class="contacts-section">
           <div class="contacts-header">
@@ -114,6 +77,22 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
   </div>
 </section>
 </template>
+
+<script setup lang="ts">
+import { computed } from "vue";
+import { Myi18n } from "./data/index.ts";
+
+// 组件参数
+const props = defineProps({
+  lang: {
+    type: String,
+    default: "zh-CN",
+  },
+});
+
+// 渲染工具
+const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
+</script>
 
 <style lang="scss" scoped>
 // ProfileSection 组件无通用样式，所有通用样式均在 index.scss 中定义
@@ -162,50 +141,6 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
   color: var(--section-text-primary);
   line-height: 1.3;
   font-weight: 700;
-}
-
-/* 中间人格类型区 */
-.grid-middle {
-  display: flex;
-  flex-direction: column;
-}
-
-.personality-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.personality-content {
-  display: flex;
-  align-items: center;
-}
-
-.personality-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.personality-code {
-  font-size: 2.5rem;
-  color: #d4a017;
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: 1px;
-}
-
-.personality-name {
-  font-size: 1.2rem;
-  color: #d4a017;
-  font-weight: 600;
-  opacity: 0.85;
-}
-
-.personality-image {
-  height: 150px;
-  width: 150px;
-  object-fit: contain;
 }
 
 /* 右侧联系方式区 */
@@ -305,29 +240,6 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 
   .contact-item {
     gap: 0.75rem;
-  }
-
-  .personality-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .personality-text {
-    align-items: center;
-  }
-
-  .personality-code {
-    font-size: 2rem;
-  }
-
-  .personality-name {
-    font-size: 1rem;
-  }
-
-  .personality-image {
-    height: 120px;
-    width: 120px;
   }
 }
 </style>

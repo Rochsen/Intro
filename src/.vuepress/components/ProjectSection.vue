@@ -1,22 +1,3 @@
-<script setup lang="ts">
-import { Myi18n } from "./data/index.ts";
-import { computed, ref } from "vue";
-import ProjectCard from "./project/ProjectCard.vue";
-import ProjectModal from "./project/ProjectModal.vue";
-import type { projectListItemType } from "./type/project.ts";
-
-const props = defineProps({
-  lang: {
-    type: String,
-    default: "zh-CN",
-  },
-});
-const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
-
-/** 当前在模态框中查看的项目 */
-const activeProject = ref<projectListItemType | null>(null);
-</script>
-
 <template>
 <section :id="t.sectionProjectId" class="section section-container">
   <div class="section-header">
@@ -51,6 +32,25 @@ const activeProject = ref<projectListItemType | null>(null);
   />
 </section>
 </template>
+
+<script setup lang="ts">
+import { Myi18n } from "./data/index.ts";
+import { computed, ref } from "vue";
+import ProjectCard from "./project/ProjectCard.vue";
+import ProjectModal from "./project/ProjectModal.vue";
+import type { projectListItemType } from "./type/project.ts";
+
+const props = defineProps({
+  lang: {
+    type: String,
+    default: "zh-CN",
+  },
+});
+const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
+
+/** 当前在模态框中查看的项目 */
+const activeProject = ref<projectListItemType | null>(null);
+</script>
 
 <style scoped lang="scss">
 .section-card {

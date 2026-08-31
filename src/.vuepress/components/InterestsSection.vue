@@ -1,16 +1,3 @@
-<script setup lang="ts">
-import { Myi18n } from "./data/index.ts";
-import { computed } from "vue";
-
-const props = defineProps({
-  lang: {
-    type: String,
-    default: "zh-CN",
-  },
-});
-const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
-</script>
-
 <template>
 <section :id="t.sectionInterestsId" class="section section-container">
   <div class="section-header">
@@ -30,5 +17,18 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
   <div class="section-card"></div>
 </section>
 </template>
+
+<script setup lang="ts">
+import { Myi18n } from "./data/index.ts";
+import { computed } from "vue";
+
+const props = defineProps({
+  lang: {
+    type: String,
+    default: "zh-CN",
+  },
+});
+const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
+</script>
 
 <style scoped lang="scss"></style>

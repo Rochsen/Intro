@@ -1,20 +1,3 @@
-<script setup lang="ts">
-import { computed } from "vue";
-import { Myi18n } from "./data/index.ts";
-
-const props = defineProps({
-  lang: {
-    type: String,
-    default: "zh-CN",
-  },
-});
-const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
-
-const getTypeColor = (type: string) => {
-  return type === "work" ? "#22c55e" : "#3b82f6";
-};
-</script>
-
 <template>
 <section :id="t.sectionExpId" class="section section-container">
   <div class="section-header">
@@ -62,6 +45,23 @@ const getTypeColor = (type: string) => {
   </div>
 </section>
 </template>
+
+<script setup lang="ts">
+import { computed } from "vue";
+import { Myi18n } from "./data/index.ts";
+
+const props = defineProps({
+  lang: {
+    type: String,
+    default: "zh-CN",
+  },
+});
+const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
+
+const getTypeColor = (type: string) => {
+  return type === "work" ? "#22c55e" : "#3b82f6";
+};
+</script>
 
 <style scoped lang="scss">
 .timeline-container {

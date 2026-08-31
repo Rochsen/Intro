@@ -1,3 +1,57 @@
+<template>
+  <section :id="t.sectionTechStackId" class="section section-container">
+    <div class="section-header">
+      <div class="section-title-row">
+        <svg
+          t="1787714827044"
+          class="icon"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="4579"
+          width="30"
+          height="30">
+          <path
+            d="M853.333333 938.666667a85.333333 85.333333 0 1 1 0.034134-170.7008A85.333333 85.333333 0 0 1 853.333333 938.666667M256 853.333333a85.333333 85.333333 0 1 1-170.7008-0.034133A85.333333 85.333333 0 0 1 256 853.333333m170.666667-682.666666a85.333333 85.333333 0 1 1 170.7008 0.034133A85.333333 85.333333 0 0 1 426.666667 170.666667m469.333333 518.0416V469.333333h-341.333333V335.2576C628.087467 316.2112 682.666667 249.924267 682.666667 170.666667c0-94.1056-76.5952-170.666667-170.666667-170.666667-94.139733 0-170.666667 76.561067-170.666667 170.666667 0 79.2576 54.5792 145.544533 128 164.590933v134.075733h-341.333333v219.374934C54.5792 707.822933 0 774.0416 0 853.333333c0 94.139733 76.561067 170.666667 170.666667 170.666667 94.071467 0 170.666667-76.526933 170.666666-170.666667 0-79.291733-54.5792-145.544533-128-164.625066V554.666667h597.333334v134.0416c-73.4208 19.114667-128 85.333333-128 164.625066 0 94.139733 76.526933 170.666667 170.666666 170.666667 94.071467 0 170.666667-76.526933 170.666667-170.666667 0-79.291733-54.5792-145.544533-128-164.625066"
+            fill="#1296db"
+            p-id="4580"></path>
+        </svg>
+        <h2 class="section-title-text">{{ t.techTitle }}</h2>
+      </div>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="section-card">
+      <div class="tech-grid">
+        <div v-for="(stack, idx) in t.techsList" :key="idx" class="tech-card">
+          <div
+            class="tech-card-glow"
+            :style="{ background: stack.glowColor }"></div>
+          <div class="tech-card-inner">
+            <div class="tech-card-header">
+              <div
+                class="tech-card-icon"
+                :style="{ background: stack.gradient }">
+                {{ stack.icon }}
+              </div>
+              <div class="tech-card-title">{{ stack.title }}</div>
+            </div>
+            <div class="tech-card-list">
+              <div
+                v-for="(item, i) in stack.items"
+                :key="i"
+                class="tech-card-item">
+                <span class="tech-item-name">{{ item.name }}</span>
+                <span class="tech-item-desc">{{ item.desc }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
 <script setup lang="ts">
 import { computed } from "vue";
 import { Myi18n } from "./data/index.ts";
@@ -11,45 +65,6 @@ const props = defineProps({
 
 const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 </script>
-
-<template>
-<section :id="t.sectionTechStackId" class="section section-container">
-  <div class="section-header">
-    <div class="section-title-row">
-      <svg t="1787714827044" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        p-id="4579" width="30" height="30">
-        <path
-          d="M853.333333 938.666667a85.333333 85.333333 0 1 1 0.034134-170.7008A85.333333 85.333333 0 0 1 853.333333 938.666667M256 853.333333a85.333333 85.333333 0 1 1-170.7008-0.034133A85.333333 85.333333 0 0 1 256 853.333333m170.666667-682.666666a85.333333 85.333333 0 1 1 170.7008 0.034133A85.333333 85.333333 0 0 1 426.666667 170.666667m469.333333 518.0416V469.333333h-341.333333V335.2576C628.087467 316.2112 682.666667 249.924267 682.666667 170.666667c0-94.1056-76.5952-170.666667-170.666667-170.666667-94.139733 0-170.666667 76.561067-170.666667 170.666667 0 79.2576 54.5792 145.544533 128 164.590933v134.075733h-341.333333v219.374934C54.5792 707.822933 0 774.0416 0 853.333333c0 94.139733 76.561067 170.666667 170.666667 170.666667 94.071467 0 170.666667-76.526933 170.666666-170.666667 0-79.291733-54.5792-145.544533-128-164.625066V554.666667h597.333334v134.0416c-73.4208 19.114667-128 85.333333-128 164.625066 0 94.139733 76.526933 170.666667 170.666666 170.666667 94.071467 0 170.666667-76.526933 170.666667-170.666667 0-79.291733-54.5792-145.544533-128-164.625066"
-          fill="#1296db" p-id="4580"></path>
-      </svg>
-      <h2 class="section-title-text">{{ t.techTitle }}</h2>
-    </div>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="section-card">
-    <div class="tech-grid">
-      <div v-for="(stack, idx) in t.techsList" :key="idx" class="tech-card">
-        <div class="tech-card-glow" :style="{ background: stack.glowColor }"></div>
-        <div class="tech-card-inner">
-          <div class="tech-card-header">
-            <div class="tech-card-icon" :style="{ background: stack.gradient }">
-              {{ stack.icon }}
-            </div>
-            <div class="tech-card-title">{{ stack.title }}</div>
-          </div>
-          <div class="tech-card-list">
-            <div v-for="(item, i) in stack.items" :key="i" class="tech-card-item">
-              <span class="tech-item-name">{{ item.name }}</span>
-              <span class="tech-item-desc">{{ item.desc }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</template>
 
 <style scoped lang="scss">
 .section-card {

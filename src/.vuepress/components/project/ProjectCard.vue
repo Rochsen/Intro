@@ -66,4 +66,8 @@ defineProps<{
   font-size: 0.95rem;
   margin-bottom: 1rem;
 }
+
+[data-theme="dark"] .project-card {
+  background-color: var(--section-card-container-bg);
+}
 </style>
