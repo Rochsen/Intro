@@ -7,5 +7,7 @@ export interface projectListItemType {
   description: string;
   achievements: string[];
   background: string;
+  challenges: string[];
+  highlights: string[];
   result: string;
 }

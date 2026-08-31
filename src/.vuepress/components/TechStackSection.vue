@@ -174,7 +174,7 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
   color: var(--section-text-secondary);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
   .tech-grid {
     grid-template-columns: 1fr;
     gap: 16px;

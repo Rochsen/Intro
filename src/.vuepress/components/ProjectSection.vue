@@ -19,7 +19,7 @@
       v-for="project in t.projectList"
       :key="project.id"
       :project="project"
-      @click="activeProject = project"
+      @click="openProjDetail(project)"
     />
   </div>
 
@@ -28,7 +28,7 @@
     :project="activeProject"
     :visible="activeProject !== null"
     :lang="lang"
-    @close="activeProject = null"
+    @close="closeProjDetail()"
   />
 </section>
 </template>
@@ -50,21 +50,32 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 
 /** 当前在模态框中查看的项目 */
 const activeProject = ref<projectListItemType | null>(null);
+
+/** 打开项目详情弹窗 */
+const openProjDetail = (project: projectListItemType) => {
+  activeProject.value = project;
+};
+/** 关闭项目详情弹窗 */
+const closeProjDetail = () => {
+  activeProject.value = null;
+};
+
 </script>
 
 <style scoped lang="scss">
 .section-card {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
   align-items: stretch;
   padding: 0 !important;
   margin: 15px auto 0;
   border: none !important;
   box-shadow: none !important;
+  background: none !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .section-card {
     grid-template-columns: repeat(2, 1fr);
   }

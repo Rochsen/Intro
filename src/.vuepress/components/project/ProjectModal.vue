@@ -27,10 +27,24 @@
           </ul>
         </div>
 
-        <!-- 背景与成果 -->
+        <!-- 背景与挑战 -->
         <div class="story-block">
           <h4>📌 {{ labels.background }}</h4>
           <p>{{ project.background }}</p>
+
+          <h4>🔥 {{ labels.challenges }}</h4>
+          <ul v-if="project.challenges && project.challenges.length">
+            <li v-for="challenge in project.challenges" :key="challenge">
+              {{ challenge }}
+            </li>
+          </ul>
+
+          <h4>💡 {{ labels.highlights }}</h4>
+          <ul v-if="project.highlights && project.highlights.length">
+            <li v-for="highlight in project.highlights" :key="highlight">
+              {{ highlight }}
+            </li>
+          </ul>
 
           <h4>📈 {{ labels.result }}</h4>
           <p>{{ project.result }}</p>
@@ -63,8 +77,8 @@ const close = () => {
 
 const labels = computed(() =>
   props.lang === "en-US"
-    ? { achievements: "Key Achievements", background: "Background & Challenge", result: "Outcome" }
-    : { achievements: "核心成就", background: "背景与挑战", result: "最终成果" }
+    ? { achievements: "Key Achievements", background: "Background", challenges: "Challenges & Solutions", highlights: "Technical Highlights", result: "Outcome" }
+    : { achievements: "核心成就", background: "项目背景", challenges: "难题与解决方法", highlights: "技术亮点", result: "最终成果" }
 );
 </script>
 
@@ -84,9 +98,9 @@ const labels = computed(() =>
   background: #fff;
   max-width: 780px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 70vh;
   overflow-y: auto;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 2.5rem 2.8rem;
   position: relative;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
@@ -114,19 +128,19 @@ const labels = computed(() =>
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.5px;
-  margin: 0.1rem 0 0.2rem;
+  margin: 0.8rem 0.5rem;
 }
 .modal-role {
   color: #2563eb;
   font-weight: 500;
   font-size: 0.95rem;
-  margin-bottom: 0.5rem;
+  margin: 0.8rem 0.5rem;
 }
 .modal-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem 0.6rem;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.8rem 0.5rem;
 }
 .modal-tags span {
   background: #f1f5f9;
@@ -139,7 +153,7 @@ const labels = computed(() =>
 .modal-description {
   color: #64748b;
   font-size: 0.95rem;
-  margin-bottom: 0.8rem;
+  margin: 0.8rem 0.5rem;
 }
 .achievements-block {
   margin: 1rem 0;
@@ -167,7 +181,16 @@ const labels = computed(() =>
 .story-block p {
   color: #475569;
   font-size: 0.95rem;
-  margin-bottom: 0.4rem;
+  margin: 0.4rem 0.5rem;
+}
+.story-block ul {
+  padding-left: 1.5rem;
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+.story-block li {
+  margin-bottom: 0.3rem;
 }
 @media (max-width: 768px) {
   .modal { padding: 1.8rem 1.2rem; }
