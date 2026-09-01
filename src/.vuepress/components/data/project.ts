@@ -264,6 +264,101 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
       result:
         "基本完成云平台后台数据爬虫的工作，并给出个人对公司云平台产品搭建的建议",
     },
+    {
+      id: "10",
+      tech: ["Python3", "Gencode", "WES流程"],
+      title: "ECS携带者筛查分析流程",
+      role: "分析端",
+      description: "构建携带者筛查Panel索引表，支持全部位点与特定Panel位点双输出",
+      achievements: [
+        "基于Gencode数据库构建hg19/hg38两种参考版本的Panel索引表",
+        "在WES分析后对所有位点做Panel标注",
+        "支持仅输出落在Panel内的位点结果",
+        "Panel索引表同时作为目标病种位点信息标注参考文件",
+      ],
+      background: "携带者筛查（ECS）业务需要Panel内位点的标注与输出能力",
+      challenges: [
+        "需同时满足'全部位点+特定Panel位点'的输出需求",
+        "通过Gencode数据库构建hg19/hg38两种参考版本的携带者筛查Panel索引表",
+      ],
+      highlights: [
+        "Panel索引表同时作为目标病种位点信息标注参考文件和其它项目的数据来源",
+        "满足'既需要全部位点、又需要特定Panel位点'的双需求",
+      ],
+      result: "流程满足双输出需求，Panel索引表持续为后续项目提供数据支持。",
+    },
+    {
+      id: "11",
+      tech: ["Python3", "hg38", "tabix", "gwasCatalog", "WES.smk"],
+      title: "WES hg38版本转化",
+      role: "项目负责人",
+      description: "将现有WES流程从hg19扩展支持hg38参考基因组版本",
+      achievements: [
+        "下载并构建hg38数据库索引（WBBC、gnomAD、AlphaMissense）",
+        "对无hg38版本的数据库采用位点转换为hg19的方式进行测试",
+        "为hg38版本开发gwasCatalog的tabix查找方式",
+        "更新本地位点频率数据库的hg38更新逻辑",
+      ],
+      background: "现有WES流程基于hg19，需支持hg38参考基因组版本以适应更多分析需求",
+      challenges: [
+        "部分hg38版本注释库缺失 → 下载hg38数据库并构建索引",
+        "对确实无hg38版本的数据库，采用位点转换为hg19的方式进行测试并顺利通过",
+        "更新本地位点频率数据库的hg38更新逻辑，测试注释更新循环适配hg19/hg38双版本",
+      ],
+      highlights: [
+        "完成hg38调查、适配与数据库建设",
+        "通过单/双端及不同分析需求的测试",
+        "实现hg19/hg38双版本注释更新循环",
+      ],
+      result: "完成hg38适配与数据库建设，通过单/双端及不同分析需求测试。",
+    },
+    {
+      id: "12",
+      tech: ["Python3", "conda", "GO/KEGG", "富集分析"],
+      title: "GO/KEGG基因集富集分析",
+      role: "分析端",
+      description: "搭建富集分析环境与脚本，支撑科研样本分析交付",
+      achievements: [
+        "搭建conda独立环境与富集分析脚本",
+        "实现GO/KEGG点状图与DAG图绘制",
+        "支撑14例医学科研样本的分析交付",
+      ],
+      background: "医学部8-9月引进14个科研样本，需要WES分析+GO/KEGG基因集富集分析",
+      challenges: [
+        "搭建富集分析环境与脚本",
+        "实现描述语对应富集到功能/通路的基因数量占比图",
+        "KEGG通路图暂未实现，留待后续开发",
+      ],
+      highlights: [
+        "产出GO/KEGG点状图与DAG图",
+        "支撑科研样本分析交付",
+      ],
+      result: "GO/KEGG点状图与DAG图产出，支撑14例科研样本分析交付。",
+    },
+    {
+      id: "13",
+      tech: ["Python3", "统计分析", "数据可视化"],
+      title: "PGS上游指标探索",
+      role: "分析端",
+      description: "探索PGS上游指标，包括Y信号判定规则与胚胎数量与年龄相关性分析",
+      achievements: [
+        "制定微弱Y信号胚胎判定规则",
+        "验证胚胎形态学指标与核型阴阳性的相关性",
+        "分析送检胚胎数量与女方年龄的负相关关系",
+      ],
+      background: "需要探索PGS上游指标，为胚胎性别判定与质量评估提供数据支持",
+      challenges: [
+        "微弱Y信号胚胎判定：制定判定规则——Y染色体窗口信号中超过50%大于Y信号均值即认为存在Y信号",
+        "与性别核型对比得相关性0.3，说明Y信号判断核型真实性的能力较弱",
+        "送检胚胎数量与年龄相关性：总体上胚胎数量与女方年龄呈负相关",
+      ],
+      highlights: [
+        "制定Y信号判定规则并验证有效性",
+        "验证胚胎形态学指标与核型阴阳性的相关性符合预期",
+        "发现胚胎数量与女方年龄的负相关关系",
+      ],
+      result: "完成PGS上游指标探索，为后续产品优化提供数据依据。",
+    },
   ],
   "en-US": [
     {
@@ -554,6 +649,113 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
       ],
       result:
         "Basically completed the data scraping work for cloud platform backends, and provided personal recommendations for building the company’s own cloud platform product.",
+    },
+    {
+      id: "10",
+      tech: ["Python3", "Gencode", "WES Pipeline"],
+      title: "Expanded Carrier Screening (ECS) Analysis Pipeline",
+      role: "Analytics Developer",
+      description:
+        "Built carrier screening Panel index tables supporting dual output of all variants and Panel‑specific variants",
+      achievements: [
+        "Constructed Panel index tables for both hg19 and hg38 reference versions using Gencode database",
+        "Applied Panel annotation to all variants after WES analysis",
+        "Supported output of only variants falling within the Panel",
+        "Panel index table also serves as reference file for target disease variant annotation",
+      ],
+      background:
+        "Expanded Carrier Screening (ECS) business requires Panel variant annotation and output capabilities",
+      challenges: [
+        "Needed to satisfy both ‘all variants’ and ‘Panel‑specific variants’ output requirements",
+        "Constructed Panel index tables for hg19/hg38 using Gencode database",
+      ],
+      highlights: [
+        "Panel index table serves as both target disease variant reference and data source for other projects",
+        "Met the dual requirement of ‘all variants + Panel‑specific variants’",
+      ],
+      result:
+        "Pipeline met dual output requirements; Panel index table continues to support subsequent projects.",
+    },
+    {
+      id: "11",
+      tech: ["Python3", "hg38", "tabix", "gwasCatalog", "WES.smk"],
+      title: "WES hg38 Version Migration",
+      role: "Project Lead",
+      description:
+        "Extended the existing WES pipeline from hg19 to support hg38 reference genome",
+      achievements: [
+        "Downloaded and built hg38 database indices (WBBC, gnomAD, AlphaMissense)",
+        "For databases without hg38 versions, tested by converting variants to hg19",
+        "Developed gwasCatalog tabix lookup for hg38 version",
+        "Updated local variant frequency database logic for hg38",
+      ],
+      background:
+        "Existing WES pipeline was based on hg19; needed to support hg38 reference genome for broader analysis needs",
+      challenges: [
+        "Some hg38 annotation databases were missing → Downloaded and built hg38 database indices",
+        "For databases without hg38 versions, converted variants to hg19 for testing and passed",
+        "Updated local frequency database logic to support hg19/hg38 dual‑version annotation update cycles",
+      ],
+      highlights: [
+        "Completed hg38 investigation, adaptation, and database construction",
+        "Passed single/double‑end and different analysis requirement tests",
+        "Implemented hg19/hg38 dual‑version annotation update cycles",
+      ],
+      result:
+        "Completed hg38 adaptation and database construction, passing single/double‑end and various analysis requirement tests.",
+    },
+    {
+      id: "12",
+      tech: ["Python3", "conda", "GO/KEGG", "Enrichment Analysis"],
+      title: "GO/KEGG Gene Set Enrichment Analysis",
+      role: "Analytics Developer",
+      description:
+        "Built enrichment analysis environment and scripts to support research sample delivery",
+      achievements: [
+        "Set up conda environment and enrichment analysis scripts",
+        "Generated GO/KEGG dot plots and DAG diagrams",
+        "Supported analysis delivery for 14 medical research samples",
+      ],
+      background:
+        "Medical department received 14 research samples in August‑September, requiring WES analysis + GO/KEGG gene set enrichment analysis",
+      challenges: [
+        "Setting up enrichment analysis environment and scripts",
+        "Implementing gene count ratio plots for functional/pathway enrichment",
+        "KEGG pathway maps not yet implemented, left for future development",
+      ],
+      highlights: [
+        "Produced GO/KEGG dot plots and DAG diagrams",
+        "Supported research sample analysis delivery",
+      ],
+      result:
+        "GO/KEGG dot plots and DAG diagrams produced, supporting 14 research sample analyses.",
+    },
+    {
+      id: "13",
+      tech: ["Python3", "Statistical Analysis", "Data Visualization"],
+      title: "PGS Upstream Indicators Exploration",
+      role: "Analytics Developer",
+      description:
+        "Explored PGS upstream indicators including Y‑signal determination rules and embryo count‑age correlation analysis",
+      achievements: [
+        "Established weak Y‑signal embryo determination rules",
+        "Verified correlation between embryo morphological indicators and karyotype positivity",
+        "Analyzed negative correlation between embryo count and maternal age",
+      ],
+      background:
+        "Needed to explore PGS upstream indicators to provide data support for embryo sex determination and quality assessment",
+      challenges: [
+        "Weak Y‑signal embryo determination: established rule — Y‑signal present if >50% of Y‑chromosome window signals exceed Y‑signal mean",
+        "Correlation with sex karyotype was 0.3, indicating Y‑signal has limited ability to determine karyotype authenticity",
+        "Embryo count‑age correlation: overall negative correlation between embryo count and maternal age",
+      ],
+      highlights: [
+        "Established Y‑signal determination rules and verified effectiveness",
+        "Verified embryo morphological indicators correlate with karyotype positivity as expected",
+        "Discovered negative correlation between embryo count and maternal age",
+      ],
+      result:
+        "Completed PGS upstream indicators exploration, providing data basis for subsequent product optimization.",
     },
   ],
 };
