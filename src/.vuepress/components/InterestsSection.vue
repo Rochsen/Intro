@@ -15,8 +15,13 @@
 
   <!-- 兴趣卡片 -->
   <div class="section-card">
-    <ul>
-      <li v-for="text in t.interestList">{{ text }}</li>
+    <ul class="interest-list">
+      <li v-for="text in t.interestList" class="interest-item">
+        <svg class="interest-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#1296db"/>
+        </svg>
+        <span>{{ text }}</span>
+      </li>
     </ul>
   </div>
 </section>
@@ -42,11 +47,27 @@ const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
   border: none !important;
   box-shadow: none !important;
 
-  ul {
+  .interest-list {
+    list-style: none;
     margin: 1rem auto;
+    padding: 0;
 
-    li {
+    .interest-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
       margin: 1rem auto;
+
+      .interest-icon {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+      }
+
+      span {
+        flex: 1;
+      }
     }
   }
 }

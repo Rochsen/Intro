@@ -74,6 +74,30 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
     },
     {
       id: "3",
+      tech: ["Python3", "Gencode", "WES流程"],
+      title: "ECS携带者筛查分析流程",
+      role: "分析端",
+      description:
+        "构建携带者筛查Panel索引表，支持全部位点与特定Panel位点双输出",
+      achievements: [
+        "基于Gencode数据库构建hg19/hg38两种参考版本的Panel索引表",
+        "在WES分析后对所有位点做Panel标注",
+        "支持仅输出落在Panel内的位点结果",
+        "Panel索引表同时作为目标病种位点信息标注参考文件",
+      ],
+      background: "携带者筛查（ECS）业务需要Panel内位点的标注与输出能力",
+      challenges: [
+        "需同时满足'全部位点+特定Panel位点'的输出需求",
+        "通过Gencode数据库构建hg19/hg38两种参考版本的携带者筛查Panel索引表",
+      ],
+      highlights: [
+        "Panel索引表同时作为目标病种位点信息标注参考文件和其它项目的数据来源",
+        "满足'既需要全部位点、又需要特定Panel位点'的双需求",
+      ],
+      result: "流程满足双输出需求，Panel索引表持续为后续项目提供数据支持。",
+    },
+    {
+      id: "4",
       tech: ["Vue3", "Antd", "TypeScript", "VbenAdmin", "VitePress"],
       title: "常规临床检验信息管理系统(CIP)",
       role: "前端开发",
@@ -102,7 +126,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "2024年底完成124个需求中的53个。2025年全程支撑驻点版、序源版、商业版、宣传网站的并行迭代与配套产出。10月CIP相关前端基本完结。",
     },
     {
-      id: "4",
+      id: "5",
       tech: ["Vue3", "Element Plus", "TypeScript", "若依(RuoYi)"],
       title: "基于审核机制的文件管理系统(FMS)",
       role: "前端开发",
@@ -131,7 +155,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "8月基本完成非权限相关功能开发，9月文件管理系统前端部分基本完成。实现右键菜单、批量操作、预览、打印、全局搜索等功能。",
     },
     {
-      id: "5",
+      id: "6",
       tech: ["Vue3", "Element Plus", "TypeScript", "teedoc"],
       title: "二代测序分析平台系统(NAP)",
       role: "前端开发",
@@ -161,7 +185,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "11月除任务投递外需求基本完成，12月NAP前端个人部分基本完成。实现芯片/组别联动勾选、按样本默认参数选项等功能。",
     },
     {
-      id: "6",
+      id: "7",
       tech: ["Python3", "bat脚本", "GUI开发", "SOP文档"],
       title: "临床检验电脑数据清除软件",
       role: "项目负责人",
@@ -189,7 +213,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
       result: "2025年2-3月完成软件与SOP修改并交付，回访未收到实验员问题反馈。",
     },
     {
-      id: "7",
+      id: "8",
       tech: ["Python3", "Shell", "自动化脚本", "aria2"],
       title: "三代测序数据下载处理自动化",
       role: "项目负责人",
@@ -218,7 +242,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "2025年5月完成TGS从样本下载到sample.json的生产过程，脚本全年持续维护。",
     },
     {
-      id: "8",
+      id: "9",
       tech: ["Python3", "统计分析", "数据可视化"],
       title: "业务数据统计软件",
       role: "项目负责人",
@@ -243,7 +267,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
       result: "销售业务统计的办公自动化，操作简单上手，辅助财务核对账单。",
     },
     {
-      id: "9",
+      id: "10",
       tech: ["Python3", "统计分析", "数据可视化", "爬虫"],
       title: "生信云平台调研",
       role: "数据挖掘",
@@ -265,29 +289,6 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "基本完成云平台后台数据爬虫的工作，并给出个人对公司云平台产品搭建的建议",
     },
     {
-      id: "10",
-      tech: ["Python3", "Gencode", "WES流程"],
-      title: "ECS携带者筛查分析流程",
-      role: "分析端",
-      description: "构建携带者筛查Panel索引表，支持全部位点与特定Panel位点双输出",
-      achievements: [
-        "基于Gencode数据库构建hg19/hg38两种参考版本的Panel索引表",
-        "在WES分析后对所有位点做Panel标注",
-        "支持仅输出落在Panel内的位点结果",
-        "Panel索引表同时作为目标病种位点信息标注参考文件",
-      ],
-      background: "携带者筛查（ECS）业务需要Panel内位点的标注与输出能力",
-      challenges: [
-        "需同时满足'全部位点+特定Panel位点'的输出需求",
-        "通过Gencode数据库构建hg19/hg38两种参考版本的携带者筛查Panel索引表",
-      ],
-      highlights: [
-        "Panel索引表同时作为目标病种位点信息标注参考文件和其它项目的数据来源",
-        "满足'既需要全部位点、又需要特定Panel位点'的双需求",
-      ],
-      result: "流程满足双输出需求，Panel索引表持续为后续项目提供数据支持。",
-    },
-    {
       id: "11",
       tech: ["Python3", "hg38", "tabix", "gwasCatalog", "WES.smk"],
       title: "WES hg38版本转化",
@@ -299,7 +300,8 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "为hg38版本开发gwasCatalog的tabix查找方式",
         "更新本地位点频率数据库的hg38更新逻辑",
       ],
-      background: "现有WES流程基于hg19，需支持hg38参考基因组版本以适应更多分析需求",
+      background:
+        "现有WES流程基于hg19，需支持hg38参考基因组版本以适应更多分析需求",
       challenges: [
         "部分hg38版本注释库缺失 → 下载hg38数据库并构建索引",
         "对确实无hg38版本的数据库，采用位点转换为hg19的方式进行测试并顺利通过",
@@ -314,33 +316,11 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
     },
     {
       id: "12",
-      tech: ["Python3", "conda", "GO/KEGG", "富集分析"],
-      title: "GO/KEGG基因集富集分析",
-      role: "分析端",
-      description: "搭建富集分析环境与脚本，支撑科研样本分析交付",
-      achievements: [
-        "搭建conda独立环境与富集分析脚本",
-        "实现GO/KEGG点状图与DAG图绘制",
-        "支撑14例医学科研样本的分析交付",
-      ],
-      background: "医学部8-9月引进14个科研样本，需要WES分析+GO/KEGG基因集富集分析",
-      challenges: [
-        "搭建富集分析环境与脚本",
-        "实现描述语对应富集到功能/通路的基因数量占比图",
-        "KEGG通路图暂未实现，留待后续开发",
-      ],
-      highlights: [
-        "产出GO/KEGG点状图与DAG图",
-        "支撑科研样本分析交付",
-      ],
-      result: "GO/KEGG点状图与DAG图产出，支撑14例科研样本分析交付。",
-    },
-    {
-      id: "13",
       tech: ["Python3", "统计分析", "数据可视化"],
       title: "PGS上游指标探索",
       role: "分析端",
-      description: "探索PGS上游指标，包括Y信号判定规则与胚胎数量与年龄相关性分析",
+      description:
+        "探索PGS上游指标，包括Y信号判定规则与胚胎数量与年龄相关性分析",
       achievements: [
         "制定微弱Y信号胚胎判定规则",
         "验证胚胎形态学指标与核型阴阳性的相关性",
@@ -433,6 +413,32 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
     },
     {
       id: "3",
+      tech: ["Python3", "Gencode", "WES Pipeline"],
+      title: "Expanded Carrier Screening (ECS) Analysis Pipeline",
+      role: "Analytics Developer",
+      description:
+        "Built carrier screening Panel index tables supporting dual output of all variants and Panel‑specific variants",
+      achievements: [
+        "Constructed Panel index tables for both hg19 and hg38 reference versions using Gencode database",
+        "Applied Panel annotation to all variants after WES analysis",
+        "Supported output of only variants falling within the Panel",
+        "Panel index table also serves as reference file for target disease variant annotation",
+      ],
+      background:
+        "Expanded Carrier Screening (ECS) business requires Panel variant annotation and output capabilities",
+      challenges: [
+        "Needed to satisfy both 'all variants' and 'Panel‑specific variants' output requirements",
+        "Constructed Panel index tables for hg19/hg38 using Gencode database",
+      ],
+      highlights: [
+        "Panel index table serves as both target disease variant reference and data source for other projects",
+        "Met the dual requirement of 'all variants + Panel‑specific variants'",
+      ],
+      result:
+        "Pipeline met dual output requirements; Panel index table continues to support subsequent projects.",
+    },
+    {
+      id: "4",
       tech: ["Vue3", "Antd", "TypeScript", "VbenAdmin", "VitePress"],
       title:
         "Clinical Information Platform (CIP) for Routine Laboratory Testing",
@@ -463,7 +469,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "Completed 53 out of 124 requirements by the end of 2024. Throughout 2025, supported parallel iterations and associated deliverables for on‑site, Xuyuan, commercial, and promotional versions. Frontend work for CIP was essentially completed by October.",
     },
     {
-      id: "4",
+      id: "5",
       tech: ["Vue3", "Element Plus", "TypeScript", "RuoYi"],
       title: "File Management System (FMS) with Approval Workflow",
       role: "Frontend Developer",
@@ -493,7 +499,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "Non‑permission features were largely completed by August; frontend for FMS was basically finished by September. Implemented context menus, batch operations, preview, printing, global search, etc.",
     },
     {
-      id: "5",
+      id: "6",
       tech: ["Vue3", "Element Plus", "TypeScript", "teedoc"],
       title: "Next‑Generation Sequencing Analysis Platform (NAP)",
       role: "Frontend Developer",
@@ -523,7 +529,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "By November, most requirements except job submission were completed; by December, frontend work for NAP was essentially finished. Implemented chip/group linked selection, default‑by‑sample parameter options, etc.",
     },
     {
-      id: "6",
+      id: "7",
       tech: [
         "Python3",
         "batch scripts",
@@ -558,7 +564,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "Completed software and SOP revisions by February–March 2025 and delivered; follow‑up received no issue reports from lab technicians.",
     },
     {
-      id: "7",
+      id: "8",
       tech: ["Python3", "Shell", "Automation scripts", "aria2"],
       title:
         "Third‑Generation Sequencing Data Download and Processing Automation",
@@ -589,7 +595,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "Completed the TGS production process from sample download to sample.json in May 2025, with scripts maintained throughout the year.",
     },
     {
-      id: "8",
+      id: "9",
       tech: [
         "Python3",
         "Statistical analysis",
@@ -622,7 +628,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "Achieved office automation for sales business statistics, easy to use, and assisting finance in billing verification.",
     },
     {
-      id: "9",
+      id: "10",
       tech: [
         "Python3",
         "Statistical analysis",
@@ -649,32 +655,6 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
       ],
       result:
         "Basically completed the data scraping work for cloud platform backends, and provided personal recommendations for building the company’s own cloud platform product.",
-    },
-    {
-      id: "10",
-      tech: ["Python3", "Gencode", "WES Pipeline"],
-      title: "Expanded Carrier Screening (ECS) Analysis Pipeline",
-      role: "Analytics Developer",
-      description:
-        "Built carrier screening Panel index tables supporting dual output of all variants and Panel‑specific variants",
-      achievements: [
-        "Constructed Panel index tables for both hg19 and hg38 reference versions using Gencode database",
-        "Applied Panel annotation to all variants after WES analysis",
-        "Supported output of only variants falling within the Panel",
-        "Panel index table also serves as reference file for target disease variant annotation",
-      ],
-      background:
-        "Expanded Carrier Screening (ECS) business requires Panel variant annotation and output capabilities",
-      challenges: [
-        "Needed to satisfy both ‘all variants’ and ‘Panel‑specific variants’ output requirements",
-        "Constructed Panel index tables for hg19/hg38 using Gencode database",
-      ],
-      highlights: [
-        "Panel index table serves as both target disease variant reference and data source for other projects",
-        "Met the dual requirement of ‘all variants + Panel‑specific variants’",
-      ],
-      result:
-        "Pipeline met dual output requirements; Panel index table continues to support subsequent projects.",
     },
     {
       id: "11",
@@ -706,32 +686,6 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
     },
     {
       id: "12",
-      tech: ["Python3", "conda", "GO/KEGG", "Enrichment Analysis"],
-      title: "GO/KEGG Gene Set Enrichment Analysis",
-      role: "Analytics Developer",
-      description:
-        "Built enrichment analysis environment and scripts to support research sample delivery",
-      achievements: [
-        "Set up conda environment and enrichment analysis scripts",
-        "Generated GO/KEGG dot plots and DAG diagrams",
-        "Supported analysis delivery for 14 medical research samples",
-      ],
-      background:
-        "Medical department received 14 research samples in August‑September, requiring WES analysis + GO/KEGG gene set enrichment analysis",
-      challenges: [
-        "Setting up enrichment analysis environment and scripts",
-        "Implementing gene count ratio plots for functional/pathway enrichment",
-        "KEGG pathway maps not yet implemented, left for future development",
-      ],
-      highlights: [
-        "Produced GO/KEGG dot plots and DAG diagrams",
-        "Supported research sample analysis delivery",
-      ],
-      result:
-        "GO/KEGG dot plots and DAG diagrams produced, supporting 14 research sample analyses.",
-    },
-    {
-      id: "13",
       tech: ["Python3", "Statistical Analysis", "Data Visualization"],
       title: "PGS Upstream Indicators Exploration",
       role: "Analytics Developer",
