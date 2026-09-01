@@ -219,7 +219,7 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
     },
     {
       id: "8",
-      tech: ["Python3", "统计分析", "数据可视化", "爬虫"],
+      tech: ["Python3", "统计分析", "数据可视化"],
       title: "业务数据统计软件",
       role: "项目负责人",
       description: "实验室样本账单数据统计与条目生成",
@@ -241,6 +241,28 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
         "V1.0.1加入NA数量对比，方便实验部检查NA数",
       ],
       result: "销售业务统计的办公自动化，操作简单上手，辅助财务核对账单。",
+    },
+    {
+      id: "9",
+      tech: ["Python3", "统计分析", "数据可视化", "爬虫"],
+      title: "生信云平台调研",
+      role: "数据挖掘",
+      description: "获取各家生信云的后台数据json，整理成调研报告",
+      achievements: [
+        "从各家生信云的后台数据，找出最受欢迎的工具模块",
+        "探索生信云的付费逻辑",
+      ],
+      background: "部门为公司做转型探索，期望了解当前生信云平台的使用市场",
+      challenges: [
+        "各家数据格式不统一，评测的维度各有不同",
+        "部分云平台比较冷门，数据较为惨淡，不足以支撑调研结论",
+      ],
+      highlights: [
+        "利用AI辅助，提供统一的格式范式，让AI整理",
+        "筛选和剔除无价值数据，利用AI合并已调查平台的数据，并生产调研报告",
+      ],
+      result:
+        "基本完成云平台后台数据爬虫的工作，并给出个人对公司云平台产品搭建的建议",
     },
   ],
   "en-US": [
@@ -503,6 +525,35 @@ export const MyProjectList: Record<string, projectListItemType[]> = {
       ],
       result:
         "Achieved office automation for sales business statistics, easy to use, and assisting finance in billing verification.",
+    },
+    {
+      id: "9",
+      tech: [
+        "Python3",
+        "Statistical analysis",
+        "Data visualization",
+        "Web scraping",
+      ],
+      title: "Bioinformatics Cloud Platform Market Research",
+      role: "Data Mining",
+      description:
+        "Retrieve backend JSON data from various bioinformatics cloud platforms and compile into a research report",
+      achievements: [
+        "Identified the most popular tool modules from backend data of multiple bioinformatics cloud platforms",
+        "Explored the monetization/pricing logic of bioinformatics cloud platforms",
+      ],
+      background:
+        "The department is exploring business transformation and aims to understand the current market landscape of bioinformatics cloud platforms.",
+      challenges: [
+        "Data formats vary across platforms, and evaluation metrics differ significantly",
+        "Some platforms are relatively niche with sparse data, insufficient to support robust research conclusions",
+      ],
+      highlights: [
+        "Leveraged AI to provide a unified data schema and assist in organizing the information",
+        "Filtered and excluded low‑value data, used AI to consolidate data from surveyed platforms, and generated a comprehensive research report",
+      ],
+      result:
+        "Basically completed the data scraping work for cloud platform backends, and provided personal recommendations for building the company’s own cloud platform product.",
     },
   ],
 };
