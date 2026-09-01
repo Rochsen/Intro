@@ -14,7 +14,11 @@
   </div>
 
   <!-- 兴趣卡片 -->
-  <div class="section-card"></div>
+  <div class="section-card">
+    <ul>
+      <li v-for="text in t.interestList">{{ text }}</li>
+    </ul>
+  </div>
 </section>
 </template>
 
@@ -31,4 +35,19 @@ const props = defineProps({
 const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.section-card {
+  padding: 0 20px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  ul {
+    margin: 1rem auto;
+
+    li {
+      margin: 1rem auto;
+    }
+  }
+}
+</style>

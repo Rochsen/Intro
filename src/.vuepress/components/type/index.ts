@@ -3,7 +3,7 @@ import { personalityType } from "./personality.ts";
 import { experienceListItemType } from "./experence.ts";
 import { techsListItemType } from "./tech.ts";
 import { projectListItemType } from "./project.ts";
-import { interestType } from "./interest.ts";
+// import { interestType } from "./interest.ts";
 
 /**
  * 语言切换文案类型
@@ -33,7 +33,7 @@ export interface I18nLocale {
 
   sectionInterestsId: string; // 兴趣sectionID
   interestsTitle: string; // 兴趣section的头标题
-  interestList?: interestType[]; // 兴趣项数组
+  interestList?: string[]; // 兴趣项数组
 
   sectionWelcomeId: string; // 结尾欢迎sectionID
   welcomeTitle: string; // 结尾欢迎

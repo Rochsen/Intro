@@ -25,8 +25,8 @@ export const enNavbar = navbar([
     text: "welcome",
     link: "/en/#welcome",
   },
-  {
-    text: "blog",
-    link: "https://rochsen.github.io/",
-  },
+  // {
+  //   text: "blog",
+  //   link: "https://rochsen.github.io/",
+  // },
 ]);

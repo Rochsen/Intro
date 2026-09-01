@@ -14,7 +14,16 @@
   </div>
 
   <!-- 欢迎和我联系 -->
-  <div class="section-card"></div>
+  <div class="section-card">
+    <div v-if="props.lang == 'zh-CN'">
+      <p>如果对我感兴趣的话，不妨看看我的博客：<a href="https://rochsen.github.io/">https://rochsen.github.io/</a> 可以提issue给我添加友链</p>
+      <p>欢迎通过邮箱：rochsen1011@qq.com 和我联系!</p>
+    </div>
+    <div v-else>
+      <p>If you are interested in me, please check out my blog: <a href="https://rochsen.github.io/">https://rochsen.github.io/</a> You can add me as a friend through the issue.</p>
+      <p>Welcome to contact me through email: rochsen1011@qq.com</p>
+    </div>
+  </div>
 </section>
 </template>
 
@@ -31,4 +40,11 @@ const props = defineProps({
 const t = computed(() => Myi18n[props.lang] ?? Myi18n["zh-CN"]);
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.section-card {
+  padding: 0 20px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+</style>

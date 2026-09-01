@@ -16,8 +16,8 @@ export default hopeTheme({
 
   navbarLayout: {
     start: ["Brand"],
-    center: [],
-    end: ["Links", "Outlook", "Language"],
+    center: ["Links"],
+    end: ["Repo", "Outlook", "Language"],
   },
 
   favicon: "/favicon.ico",
@@ -25,6 +25,9 @@ export default hopeTheme({
   docsDir: "src",
 
   blog: {},
+
+  repo: "https://github.com/Rochsen/",
+  repoDisplay: true,
 
   locales: {
     "/": {
@@ -81,7 +84,7 @@ export default hopeTheme({
     blog: true,
 
     components: {
-      components: ["Badge"],
+      // components: ["Badge"],
     },
 
     icon: {

@@ -4,6 +4,7 @@ import { MyPersonality } from "./personality.ts";
 import { MyExperience } from "./experence.ts";
 import { MyTechsList } from "./tech.ts";
 import { MyProjectList } from "./project.ts";
+import { MyInterests } from "./interest.ts";
 
 /** 语言包 */
 export const Myi18n: Record<string, I18nLocale> = {
@@ -27,11 +28,10 @@ export const Myi18n: Record<string, I18nLocale> = {
     projectTitle: "项目",
     projectList: MyProjectList["zh-CN"], // 项目项数组
     sectionInterestsId: "兴趣", // 个人评价sectionID
-    interestsTitle: "兴趣",
-    interestList: [],
+    interestsTitle: "研究兴趣 / 个人学习方向",
+    interestList: MyInterests["zh-CN"],
     sectionWelcomeId: "联系", // 结尾欢迎
     welcomeTitle: "欢迎您与我联系",
-    welcomeDescription: "",
   },
   "en-US": {
     sectionProfileId: "profile", // 档案sectionID
@@ -53,10 +53,9 @@ export const Myi18n: Record<string, I18nLocale> = {
     projectTitle: "Project",
     projectList: MyProjectList["en-US"],
     sectionInterestsId: "interest", // 兴趣sectionID
-    interestsTitle: "Interest",
-    interestList: [],
+    interestsTitle: "Research Interest / What I want to learn",
+    interestList: MyInterests["en-US"],
     sectionWelcomeId: "welcome", // 结尾欢迎
     welcomeTitle: "Welcome",
-    welcomeDescription: "",
   },
 };
