@@ -16,11 +16,11 @@
   <!-- 欢迎和我联系 -->
   <div class="section-card">
     <div v-if="props.lang == 'zh-CN'">
-      <p>如果对我感兴趣的话，不妨看看我的博客：<a href="https://rochsen.github.io/">https://rochsen.github.io/</a> 可以提issue给我添加友链</p>
+      <p>如果对我感兴趣的话，不妨看看我的博客：<a href="https://rochsen.github.io/" target="_blank" rel="noopener noreferrer">https://rochsen.github.io/</a> 可以提issue给我添加友链</p>
       <p>欢迎通过邮箱：rochsen1011@qq.com 和我联系!</p>
     </div>
     <div v-else>
-      <p>If you are interested in me, please check out my blog: <a href="https://rochsen.github.io/">https://rochsen.github.io/</a> You can add me as a friend through the issue.</p>
+      <p>If you are interested in me, please check out my blog: <a href="https://rochsen.github.io/" target="_blank">https://rochsen.github.io/</a> You can add me as a friend through the issue.</p>
       <p>Welcome to contact me through email: rochsen1011@qq.com</p>
     </div>
   </div>
