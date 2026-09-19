@@ -12,10 +12,12 @@ export interface I18nLocale {
   sectionProfileId: string; // 档案sectionID
   profileTitle?: string; // 档案section的头标题
   education?: string; // 毕业院校
-  position?: string; // 职业tag文字
+  birthday?: string; // 生日tag文字
   contacts?: string; // 联系方式tag文字
-  positionValue?: string; // 职业tag值
-  educationValue?: string; // 毕业院校tag
+  major?: string; // 专业tag文字
+  birthdayValue?: string; // 生日tag值
+  educationValue?: string; // 毕业院校tag值
+  majorValue?: string; // 专业tag值
   contactList?: contactItemType[]; // 联系方式数组
   personality?: personalityType;
 

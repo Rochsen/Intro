@@ -12,10 +12,12 @@ export const Myi18n: Record<string, I18nLocale> = {
     sectionProfileId: "档案", // 档案sectionID
     profileTitle: "档案",
     education: "毕业院校",
-    position: "职业",
+    birthday: "出生日期",
     contacts: "联系方式",
-    positionValue: "生物信息分析工程师",
+    major: "本科专业",
+    birthdayValue: "1999-09-03",
     educationValue: "仲恺农业工程学院",
+    majorValue: "种子科学与工程",
     contactList: MyContacts["zh-CN"], // 联系方式数组
     personality: MyPersonality["zh-CN"], // 16人格类型
     sectionExpId: "经历", // 经历sectionID
