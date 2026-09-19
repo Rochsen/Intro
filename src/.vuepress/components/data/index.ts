@@ -39,10 +39,12 @@ export const Myi18n: Record<string, I18nLocale> = {
     sectionProfileId: "profile", // 档案sectionID
     profileTitle: "Profile",
     education: "EDUCATION",
-    position: "POSITION",
+    birthday: "BIRTHDAY",
     contacts: "CONTACTS",
-    positionValue: "Bioinformatics Engineer",
+    major: "MAJOR",
+    birthdayValue: "1999-09-03",
     educationValue: "Zhongkai University of Agriculture and Engineering",
+    majorValue: "Seed Science and Engineering",
     contactList: MyContacts["en-US"],
     personality: MyPersonality["en-US"],
     sectionExpId: "experience", // 经历sectionID
