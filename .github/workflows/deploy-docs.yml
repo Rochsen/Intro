@@ -40,8 +40,6 @@ jobs:
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=4096
-          # GitHub Pages 挂在子路径，需与仓库访问路径一致
-          VP_BASE: /Intro/
         run: |-
           pnpm run docs:build
           > src/.vuepress/dist/.nojekyll
