@@ -12,7 +12,7 @@ export const mediasConfig = {
 };
 
 export default hopeTheme({
-  hostname: "https://rochsen.github.io/intro",
+  hostname: "https://intro.rochsen.cn",
 
   navbarLayout: {
     start: ["Brand"],
