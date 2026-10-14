@@ -1,0 +1,14 @@
+---
+description: 项目规则
+---
+
+1. git commit信息必须是中文，且不得超出50个字
+2. 提交信息示例：feat: 新增XXX功能
+3. 提交信息示例：fix: 修复XXXbug
+4. 提交信息示例：refactor: 重构代码
+5. 提交信息示例：test: 添加测试
+6. 提交信息示例：docs: 更新XXX文档
+7. 提交信息示例：chore: 更新XXX依赖
+8. 提交信息示例：style: 更新XXX样式
+9. 提交信息示例：revert: 回滚XXX代码
+10. 提交信息示例：merge: 合并代码
