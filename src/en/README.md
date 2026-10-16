@@ -2,7 +2,7 @@
 portfolio: true
 home: true
 name: Luo Haosen
-avatar: /real-avatar.jpg
+avatar: /real-avatar.png
 titles:
   [
     "such as Bioinformatics Engineer",

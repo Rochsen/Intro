@@ -2,7 +2,7 @@
 portfolio: true
 home: true
 name: 罗浩森
-avatar: /real-avatar.jpg
+avatar: /real-avatar.png
 titles:
   [
     "是一个生物信息分析工程师",
