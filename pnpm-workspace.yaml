@@ -1,3 +1,15 @@
+# 新版本至少发布满 1 天才允许安装，避开安装脚本投毒的短窗口
+minimumReleaseAge: 1440
+# 没有满足发布年龄的版本时直接失败
+minimumReleaseAgeStrict: true
+# 传递依赖只能来自 registry，不能来自 git 或 tarball
+blockExoticSubdeps: true
+# 未在 allowBuilds 中放行的依赖安装脚本会导致安装失败
+strictDepBuilds: true
+# 拒绝信任级别比以往版本更低的发布
+trustPolicy: no-downgrade
+# 发布超过 7 天的版本不再做信任降级检查
+trustPolicyIgnoreAfter: 10080
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
