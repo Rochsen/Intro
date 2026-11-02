@@ -1,4 +1,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://intro.rochsen.cn/sitemap.xml
+Sitemap: https://intro.rochsen.cn/Intro/sitemap.xml
