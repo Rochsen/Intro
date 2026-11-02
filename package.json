@@ -10,7 +10,7 @@
   },
   "scripts": {
     "preinstall": "node -e \"if(!/pnpm/.test(process.env.npm_config_user_agent||'')){console.error('请使用 pnpm 安装依赖');process.exit(1)}\"",
-    "docs:build": "vuepress-vite build src",
+    "docs:build": "python src/.vuepress/pkg.py",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "pnpm dlx vp-update"
