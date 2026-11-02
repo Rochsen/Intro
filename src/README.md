@@ -2,22 +2,25 @@
 portfolio: true
 home: true
 name: 罗浩森
-avatar: /real-avatar.png
+avatar: /real-avatar.webp
 titles:
-  [
-    "是一个生物信息分析工程师",
-    "也是一个前端开发工程师",
-    "欢迎来看我的个人简介"
-  ]
+  ["是一个生物信息分析工程师", "也是一个前端开发工程师", "欢迎来看我的个人简介"]
 welcome: "👋 你好, 我是"
-bgImage: /assets/wallpaper-3.jpg
-avatarStyle: { width: "250px", height: "250px", borderRadius: "50%", border: "5px solid rgba(100, 180, 255, 0.7)", boxShadow: "0 0 40px rgba(100, 180, 255, 0.5), 0 0 80px rgba(100, 180, 255, 0.3)" }
+bgImage: /assets/wallpaper-3.webp
+avatarStyle:
+  {
+    width: "250px",
+    height: "250px",
+    borderRadius: "50%",
+    border: "5px solid rgba(100, 180, 255, 0.7)",
+    boxShadow: "0 0 40px rgba(100, 180, 255, 0.5), 0 0 80px rgba(100, 180, 255, 0.3)",
+  }
 content: "portfolio"
 icon: house
 title: 主页
 heroFullScreen: true
 footer: ""
-copyright: "Copyright © 2026 | Luo Haosen. All rights reserved."
+copyright: "Copyright © 2026 | 粤ICP备2026169315号"
 ---
 
 <script setup>

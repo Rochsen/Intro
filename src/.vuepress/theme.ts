@@ -20,7 +20,7 @@ export default hopeTheme({
     end: ["Repo", "Outlook", "Language"],
   },
 
-  favicon: "/q-avatar.png",
+  favicon: "/q-avatar.webp",
 
   docsDir: "src",
 
