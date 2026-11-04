@@ -11,6 +11,32 @@ export const mediasConfig = {
   Zhihu: "https://www.zhihu.com/people/Rochsen",
 };
 
+// 全站页脚备案号。标签之间的空白会变成文本节点，这里去掉，避免把图标和链接撑开
+export const copyrightHtml = `
+<span style="display:inline-flex;align-items:flex-end;vertical-align:bottom;">
+  <span style="display:inline-block;width:16px;flex-shrink:0;margin-right:0.25rem;line-height:0;">
+    <img
+      src="/registration.png"
+      alt=""
+      style="display:block;width:100%;height:auto;border:0;"
+    />
+  </span>
+  <a
+    href="https://beian.mps.gov.cn/#/query/webSearch?code=44200102446526"
+    rel="noreferrer"
+    target="_blank"
+  >粤公网安备 44200102446526号</a>
+  <a
+    href="https://beian.miit.gov.cn/"
+    rel="noopener"
+    target="_blank"
+    style="margin-left:20px;"
+  >粤ICP备2026169315号</a>
+</span>
+`
+  .replace(/>\s+</g, "><")
+  .trim();
+
 export default hopeTheme({
   hostname: "https://intro.rochsen.cn",
 
@@ -29,16 +55,16 @@ export default hopeTheme({
   repo: "https://github.com/Rochsen/",
   repoDisplay: true,
 
+  // 是否展示页脚
+  displayFooter: true,
+  copyright: copyrightHtml,
+
   locales: {
     "/": {
       navbar: zhNavbar,
-      footer: "默认页脚",
-      displayFooter: false,
     },
     "/en/": {
       navbar: enNavbar,
-      footer: "Default footer",
-      displayFooter: false,
     },
   },
 
